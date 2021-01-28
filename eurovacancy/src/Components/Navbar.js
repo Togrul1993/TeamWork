@@ -1,22 +1,79 @@
-import { useState } from 'react'
-import '../Asests/Navbar.scss'
+import { useState } from 'react';
+import { Dropdown, Button } from 'react-bootstrap'
+import aze from '../Image/azerbaijan.png'
+import eng from '../Image/united-kingdom.png'
+import rus from '../Image/russia.png'
+import logo from '../Image/logo.png'
 
 const Navbar = () => {
 
-	const [nav] = useState(["AnaSeyfe", "Blog", "Haqqimizda", "Reklam", "Qaydalar"])
+	const [nav] = useState(["AnaSeyfe", "Haqqimizda", "Blog", "Reklam", "Qaydalar", "Vacansiya"])
+
+
+	const MenuRight = () => {
+		const rightMenu = document.querySelector('.menu-items')
+		rightMenu.style.left = "0"
+		const left = document.querySelector('#right')
+		left.style.display = "none"
+		const right = document.querySelector('#left')
+		right.style.display = "block"
+
+	}
+
+
+	const MenuLeft = () => {
+		const leftMenu = document.querySelector('.menu-items')
+		leftMenu.style.left = "-100%"
+
+		const right = document.querySelector('#left')
+		right.style.display = "none"
+
+		const left = document.querySelector('#right')
+		left.style.display = "block"
+	}
 
 	return (
 		<>
-			<ul>
+			<div className="euro-navbar">
+
+				<div className="euro-brand">
+					<a className="euro-brand-link"><img src={logo} alt="Logo" /></a>
+				</div>
+
+				<div className="euro-button">
+					<Dropdown className="euro-dropdown">
+						<Dropdown.Toggle id="dropdown-basic" className="dropdown-button">
+							Languages
+  						</Dropdown.Toggle>
+
+						<Dropdown.Menu className="euro-dropdown-menu">
+							<Dropdown.Item href="#/action-1" className="euro-dropdown-item"> <img src={aze} /> Azerbaycan</Dropdown.Item>
+							<Dropdown.Item href="#/action-2" className="euro-dropdown-item"><img src={rus} /> Rusian</Dropdown.Item>
+							<Dropdown.Item href="#/action-3" className="euro-dropdown-item"><img src={eng} />English</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
+
+					<Button href="#" className="add-cv">CV yerləşdir</Button>
+				</div>
+
+			</div>
+
+			<div className="menu-icon">
+
+				<h6><i id="right" className="fa fa-chevron-right" aria-hidden="true" onClick={MenuRight}></i> Menu<i id="left" className="fa fa-chevron-left" aria-hidden="true" onClick={MenuLeft}></i></h6>
+			</div>
+
+			<ul className="menu-items">
 				{
-					nav.map((nav) => (
-						<li>{nav}</li>
+					nav.map((nav, id) => (
+						<a href="#" className="euro-item-link" key={id}>{nav}</a>
 					))
 				}
-
 			</ul>
+
+
 		</>
 	)
 }
 
-export default Navbar
+export default Navbar;
