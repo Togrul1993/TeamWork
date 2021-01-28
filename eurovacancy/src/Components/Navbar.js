@@ -4,6 +4,8 @@ import aze from '../Image/azerbaijan.png'
 import eng from '../Image/united-kingdom.png'
 import rus from '../Image/russia.png'
 import logo from '../Image/logo.png'
+import world from '../Image/world.png'
+import addCv from '../Image/addCv-2.png'
 
 const Navbar = () => {
 
@@ -43,17 +45,17 @@ const Navbar = () => {
 				<div className="euro-button">
 					<Dropdown className="euro-dropdown">
 						<Dropdown.Toggle id="dropdown-basic" className="dropdown-button">
-							Languages
-  						</Dropdown.Toggle>
+							<img src={world} />
+						</Dropdown.Toggle>
 
 						<Dropdown.Menu className="euro-dropdown-menu">
-							<Dropdown.Item href="#/action-1" className="euro-dropdown-item"> <img src={aze} /> Azerbaycan</Dropdown.Item>
-							<Dropdown.Item href="#/action-2" className="euro-dropdown-item"><img src={rus} /> Rusian</Dropdown.Item>
-							<Dropdown.Item href="#/action-3" className="euro-dropdown-item"><img src={eng} />English</Dropdown.Item>
+							<Dropdown.Item href="#/action-1" className="euro-dropdown-item"> <img src={aze} /></Dropdown.Item>
+							<Dropdown.Item href="#/action-2" className="euro-dropdown-item"><img src={rus} /> </Dropdown.Item>
+							<Dropdown.Item href="#/action-3" className="euro-dropdown-item"><img src={eng} /></Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
 
-					<Button href="#" className="add-cv">CV yerləşdir</Button>
+					<Button href="#" className="add-cv"><img src={addCv} /></Button>
 				</div>
 
 			</div>

@@ -49,7 +49,7 @@ body {
         width: 140px;
         height: 110px; }
   .euro-navbar .euro-button {
-    max-width: 290px;
+    max-width: 190px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -58,10 +58,50 @@ body {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; }
     .euro-navbar .euro-button .euro-dropdown {
-      margin-right: 8px; }
-    .euro-navbar .euro-button .euro-dropdown-menu .euro-dropdown-item img {
-      width: 25px;
-      height: 25px; }
+      margin-right: 11px;
+      top: 15px;
+      height: 40px;
+      border-radius: 5px;
+      -webkit-box-shadow: -5px 5px 10px #9fa2a6, 5px -5px 10px #d7dbe0;
+              box-shadow: -5px 5px 10px #9fa2a6, 5px -5px 10px #d7dbe0;
+      z-index: 200; }
+      .euro-navbar .euro-button .euro-dropdown .dropdown-button {
+        background-color: transparent; }
+        .euro-navbar .euro-button .euro-dropdown .dropdown-button img {
+          width: 25px;
+          height: 25px; }
+      .euro-navbar .euro-button .euro-dropdown .euro-dropdown-menu {
+        background-color: #273c75;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .euro-navbar .euro-button .euro-dropdown .euro-dropdown-menu .euro-dropdown-item {
+          padding: 0;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 5px;
+          z-index: 100; }
+          .euro-navbar .euro-button .euro-dropdown .euro-dropdown-menu .euro-dropdown-item img {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 25px;
+            height: 25px;
+            -ms-flex-item-align: center;
+                align-self: center; }
+    .euro-navbar .euro-button .add-cv {
+      padding: 0;
+      width: 55px;
+      height: 55px;
+      background-color: transparent;
+      border: none;
+      border-radius: 0px;
+      -webkit-box-shadow: -5px 5px 10px #9fa2a6, 5px -5px 10px #d7dbe0;
+              box-shadow: -5px 5px 10px #9fa2a6, 5px -5px 10px #d7dbe0; }
+      .euro-navbar .euro-button .add-cv img {
+        width: 55px;
+        height: 55px; }
 
 .menu-icon {
   position: fixed;
@@ -150,5 +190,78 @@ body {
     max-height: 400px; }
 
 /* == Header Style end*/
+@media (max-width: 998px) {
+  .euro-header {
+    height: 500px; }
+    .euro-header .euro-title {
+      position: relative;
+      font-weight: 900;
+      font-size: 40px;
+      height: 70px;
+      padding: 10px; }
+    .euro-header .header_image_2 {
+      max-width: 400px;
+      max-height: 300px; } }
+@media (max-width: 750px) {
+  .euro-header {
+    height: 400px; }
+    .euro-header .euro-title {
+      position: relative;
+      font-weight: 900;
+      font-size: 30px;
+      height: 60px;
+      padding: 10px; }
+    .euro-header .header_image_2 {
+      position: relative;
+      top: 35px;
+      max-width: 300px;
+      max-height: 200px; }
+
+  .euro-navbar {
+    padding: 10px 20px; }
+    .euro-navbar .euro-brand a img {
+      width: 110px;
+      height: 80px; } }
+@media (max-width: 530px) {
+  .euro-header {
+    height: 240px; }
+    .euro-header .euro-title {
+      position: relative;
+      font-weight: 900;
+      font-size: 30px;
+      top: 45px;
+      height: 60px;
+      padding: 10px; }
+    .euro-header .header_image_2 {
+      display: none; }
+
+  .euro-navbar .euro-brand a img {
+    width: 110px;
+    height: 80px; }
+  .euro-navbar .euro-button .euro-dropdown .euro-dropdown-menu .euro-dropdown-item img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px; } }
+@media (max-width: 530px) {
+  .euro-navbar .euro-brand a img {
+    width: 100px;
+    height: 80px; }
+  .euro-navbar .euro-button .euro-dropdown {
+    top: 0; }
+    .euro-navbar .euro-button .euro-dropdown .euro-dropdown-menu {
+      min-width: 60px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .euro-navbar .euro-button .euro-dropdown .euro-dropdown-menu .euro-dropdown-item img {
+        width: 20px;
+        height: 20px; }
+  .euro-navbar .euro-button .add-cv {
+    width: 35px;
+    height: 35px; }
+    .euro-navbar .euro-button .add-cv img {
+      width: 35px;
+      height: 35px; } }
 
 /*# sourceMappingURL=Navbar.css.map */
