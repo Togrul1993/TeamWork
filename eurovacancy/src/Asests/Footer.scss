@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,900&display=swap');
+
+$bgcolor:rgba(205, 217, 222,1.0);
+$txtcolor:rgba(245, 246, 250,1.0);
+$bgLightGrey:rgba(220, 221, 225,1.0);
+$bgcolor-2:rgba(39, 60, 117,1);
+
+
+footer{
+	height: 500px;
+	position: relative;
+	padding: 0;
+	background-color: $bgcolor;
+	display: flex;
+	flex-direction: row;
+	padding-top: 25px;
+
+	img{
+		position: absolute;
+		top: -5px;
+		left: 0;
+		width: 100%;
+	}
+
+	.link-share{
+		width: 300px;
+	}
+
+
+	.form{
+		
+		width: 300px;
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: $bgcolor-2;
+		float: right;
+	}
+}
