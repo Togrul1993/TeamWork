@@ -60,7 +60,11 @@ const Navbar = () => {
 
 			<div className="menu-icon">
 
-				<h6><i id="right" className="fa fa-chevron-right" aria-hidden="true" onClick={MenuRight}></i> Menu<i id="left" className="fa fa-chevron-left" aria-hidden="true" onClick={MenuLeft}></i></h6>
+				<h6>
+					<i id="right" className="fa fa-chevron-right" aria-hidden="true" onClick={MenuRight}></i>
+					 Menu
+					 <i id="left" className="fa fa-chevron-left" aria-hidden="true" onClick={MenuLeft}></i>
+				</h6>
 			</div>
 
 			<ul className="menu-items">
