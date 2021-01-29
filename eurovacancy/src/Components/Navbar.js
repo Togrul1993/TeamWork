@@ -9,8 +9,6 @@ import addCv from '../Image/addCv-2.png'
 
 const Navbar = () => {
 
-	const [nav] = useState(["AnaSeyfe", "Haqqimizda", "Blog", "Reklam", "Qaydalar", "Vacansiya"])
-
 
 	const MenuRight = () => {
 		const rightMenu = document.querySelector('.menu-items')
@@ -66,11 +64,13 @@ const Navbar = () => {
 			</div>
 
 			<ul className="menu-items">
-				{
-					nav.map((nav, id) => (
-						<a href="#" className="euro-item-link" key={id}>{nav}</a>
-					))
-				}
+				<a href="/" className="euro-item-link" >AnaSəyfə</a>
+				<a href="/haqqımızda" className="euro-item-link" >Haqqımızda</a>
+				<a href="/vakansiyaLar" className="euro-item-link" >VakansiyaLar</a>
+				<a href="/blog" className="euro-item-link" >Blog</a>
+				<a href="/reklam" className="euro-item-link" >Reklam</a>
+				<a href="/qaydalar" className="euro-item-link" >Qaydalar</a>
+				<a href="/əlaqə" className="euro-item-link" >Əlaqə</a>
 			</ul>
 
 
