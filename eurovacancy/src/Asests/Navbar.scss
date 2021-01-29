@@ -41,7 +41,10 @@ body{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	background-color:$bgcolor;
+	background: rgba( 205, 217, 222, 0.35 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 6.0px );
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	color: $txtcolor;
 	align-items: center;
 	padding: 20px 60px 20px 60px;
@@ -49,18 +52,26 @@ body{
 
 	.euro-brand{
 		cursor: pointer;
-
+		width: 130px;
+		height: 80px;
+		background: transparent;
+		box-shadow:  20px 20px 60px #aeb8bd,
+		   -20px -20px 60px #ecfaff;
+		
 		a{
 			text-decoration: none;
-
+			align-items: center;	
 
 			img{
-				width: 140px;
-				height: 110px;
+				width: 120px;
+				height: 90px;
+				display: flex;
+				align-self: center;
 				
 			}
 		}
 	}
+
 
 	.euro-button{
 		max-width: 190px;
@@ -75,6 +86,7 @@ body{
 			box-shadow:  -5px 5px 10px #9fa2a6,
 					   5px -5px 10px #d7dbe0;
 			z-index: 200;
+
 			
 			.dropdown-button{
 				background-color: transparent;
@@ -88,7 +100,9 @@ body{
 
 
 			.euro-dropdown-menu{
-				background-color: $bgcolor-2;
+				background-color: transparent;
+				box-shadow:  -5px 5px 10px #9fa2a6,
+		   				5px -5px 10px #d7dbe0;
 				display: flex;
 				
 
@@ -97,12 +111,17 @@ body{
 					align-items: center;
 					padding: 5px;
 					z-index: 100;
+
+					&:hover{
+						background-color: transparent;
+					}
 					
 					img{
 						display: flex;
 						width: 25px;
 						height: 25px;
 						align-self: center;
+
 					}
 				}
 			}
@@ -132,13 +151,19 @@ body{
 .menu-icon{
 	position: fixed;
 	left: 0;
-	top: 90px;
+	top: 95px;
 	width: 180px;
 	height: 40px;
 	padding: 10px 15px;
-	background-color: $bgcolor-2;
-	color: $txtcolor;
-	z-index: 99;
+	background: rgba( 205, 217, 222, 0.35 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 6.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	color: $bgcolor-2;
+	z-index: 100;
+
+
 	
 	h6{
 		text-align: center;
@@ -165,17 +190,22 @@ body{
 	height: 300px;
 	width: 180px;
 	left: -100%;
-	top: 121px;
+	top: 137px;
+	font-weight: 900;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
 	text-align: center;
-	background-color: $bgcolor-2;
+	background: rgba( 205, 217, 222, 0.35 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 6.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	transition: all 0.5s ease;
 	z-index: 99;
 
 	.euro-item-link{
-		color: $txtcolor;
+		color: $bgcolor-2;
 		text-decoration: none;
 	}
 
@@ -184,95 +214,14 @@ body{
 
 
 
-/* == Navbar Style start*/
-.euro-header{
-	position: relative;
-	top: 90px;
-	width: 100%;
-	height: 600px;
-	background-color: $bgcolor;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-
-	.euro-title{
-		position: relative;
-		font-weight: 900;
-		font-size: 60px;
-		height: 100px;
-		padding: 15px;
-		top: 150px;
-		color: $bgcolor-2;
-		box-shadow: inset -5px 5px 10px #9fa2a6,
-            		inset 5px -5px 10px #d7dbe0
-
-	}
-
-	.header_image_1{
-		width: 100%;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
-
-	.header_image_2{
-		max-width: 500px;
-		max-height: 400px;
-	}
-}
-/* == Header Style end*/
-
-
-
-@media (max-width:998px){
-
-	.euro-header{
-		height: 500px;
-		.euro-title{
-			position: relative;
-			font-weight: 900;
-			font-size: 40px;
-			height: 70px;
-			padding: 10px;
-			
-		}
-		.header_image_1{
-		}
-		.header_image_2{
-			max-width: 400px;
-			max-height: 300px;
-		}
-	}
-}
-
 
 @media (max-width:750px){
-	.euro-header{
-		height: 400px;
-
-		.euro-title{
-			position: relative;
-			font-weight: 900;
-			font-size: 30px;
-			height: 60px;
-			padding: 10px;
-			
-		}
-		.header_image_1{
-		}
-		.header_image_2{
-			position: relative;
-			top: 35px;
-			max-width: 300px;
-			max-height: 200px;
-		}
-	}
-
 
 	.euro-navbar{
 		padding: 10px 20px;
 		.euro-brand{
-			
+			width: 120px;
+			height: 80px;
 			a{
 				
 				img{
@@ -282,39 +231,6 @@ body{
 				}
 			}
 		}
-
-		.euro-button{
-			
-		
-			
-
-			.euro-dropdown{
-				
-
-				.dropdown-button{
-					
-					
-				}
-				.euro-dropdown-menu{
-					
-					.euro-dropdown-item{
-						
-
-						img{
-							
-							
-							
-						}
-					}
-				}
-			}
-			.add-cv{
-				
-				
-				
-
-			}
-		}
 	}
 
 
@@ -322,23 +238,6 @@ body{
 
 
 @media (max-width:530px){
-		.euro-header{
-			height: 240px;
-
-			.euro-title{
-				position: relative;
-				font-weight: 900;
-				font-size: 30px;
-				top: 45px;
-				height: 60px;
-				padding: 10px;
-
-			}
-			.header_image_2{
-				display: none;
-			}
-		}
-
 
 		.euro-navbar{
 			
@@ -357,11 +256,6 @@ body{
 			
 
 				.euro-dropdown{
-
-					.dropdown-button{
-						
-
-					}
 					.euro-dropdown-menu{
 
 						.euro-dropdown-item{
@@ -386,7 +280,8 @@ body{
 	.euro-navbar{
 		
 		.euro-brand{
-			
+			width: 110px;
+			height: 80px;
 			a{
 				
 				img{
@@ -401,25 +296,22 @@ body{
 			
 			.euro-dropdown{
 				top: 0;
-				.dropdown-button{
-					
-					
-				}
 				.euro-dropdown-menu{
-					min-width: 60px;
-					flex-direction: column;
+					min-width: 50px;
+					flex-direction: row;
 
 					.euro-dropdown-item{
 						
 						img{
 							
-							width: 20px;
-							height: 20px;
+							width: 25px;
+							height: 25px;
 							
 						}
 					}
 				}
 			}
+
 			.add-cv{
 				width: 35px;
 				height: 35px;

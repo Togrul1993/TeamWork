@@ -1,10 +1,9 @@
 import React from 'react'
-import footer from '../Image/euro-7.png'
 
 const Footer = () => {
 	return (
 		<footer className="container-fluid">
-			<img src={footer} />
+
 
 			<div>
 
