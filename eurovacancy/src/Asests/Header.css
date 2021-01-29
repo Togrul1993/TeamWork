@@ -33,13 +33,17 @@ body {
     padding: 15px;
     top: 190px;
     color: #273c75;
-    -webkit-box-shadow: inset -5px 5px 10px #9fa2a6, inset 5px -5px 10px #d7dbe0;
-            box-shadow: inset -5px 5px 10px #9fa2a6, inset 5px -5px 10px #d7dbe0; }
+    background: #cdd9de;
+    -webkit-box-shadow: 5px 5px 10px #aeb8bd, -5px -5px 10px #ecfaff;
+            box-shadow: 5px 5px 10px #aeb8bd, -5px -5px 10px #ecfaff; }
   .euro-header .header_image_2 {
     position: relative;
     max-width: 500px;
-    max-height: 400px;
-    top: 80px; }
+    max-height: 350px;
+    top: 100px;
+    background: #cdd9de;
+    -webkit-box-shadow: 5px 5px 10px #aeb8bd, -5px -5px 10px #ecfaff;
+            box-shadow: 5px 5px 10px #aeb8bd, -5px -5px 10px #ecfaff; }
 
 /* == Header Style end*/
 @media (max-width: 998px) {
@@ -65,20 +69,28 @@ body {
       padding: 10px; }
     .euro-header .header_image_2 {
       position: relative;
-      top: 90px;
+      top: 100px;
       max-width: 300px;
       max-height: 200px; } }
 @media (max-width: 530px) {
   .euro-header {
-    height: 240px; }
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .euro-header .euro-title {
       position: relative;
       font-weight: 900;
       font-size: 30px;
-      top: 140px;
+      width: 250px;
+      top: 150px;
+      margin: auto;
+      margin-bottom: 70px;
       height: 60px;
       padding: 10px; }
     .euro-header .header_image_2 {
-      display: none; } }
+      margin: auto;
+      margin-bottom: 180px; } }
 
 /*# sourceMappingURL=Header.css.map */

@@ -315,3 +315,17 @@ body{
 	}
 
 }
+
+
+@media (max-width:794px){
+	.euro-footer{
+		justify-content: center;
+	}
+}
+
+@media (max-width:530px){
+	.euro-footer{
+		padding: 30px 5px;
+		justify-content: center;
+	}
+}

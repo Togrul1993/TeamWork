@@ -278,4 +278,16 @@ body {
         -webkit-box-shadow: inset 5px 5px 10px #aeb8bd, inset -5px -5px 10px #ecfaff;
                 box-shadow: inset 5px 5px 10px #aeb8bd, inset -5px -5px 10px #ecfaff; }
 
+@media (max-width: 794px) {
+  .euro-footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+@media (max-width: 530px) {
+  .euro-footer {
+    padding: 30px 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 /*# sourceMappingURL=Footer.css.map */
