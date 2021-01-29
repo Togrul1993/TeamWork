@@ -106,10 +106,20 @@ body{
 			height: 30px;
 			margin-bottom: 5px;
 
-			i{
-				font-size: 20px;
+			a{
 				margin-right: 5px;
+
+				i{
+					color: red;
+					font-size: 20px;
+					
+				}
 			}
+			
+			
+			
+			
+			
 		}
 
 		.link-share{
@@ -198,13 +208,16 @@ body{
 			font-weight: 600;
 			text-align: center;
 			padding: 5px;
+			background: #cdd9de;
+			box-shadow:  5px 5px 10px #aeb8bd,
+					-5px -5px 10px #ecfaff;
 			z-index: 16;
 			
 			&:hover{
 				color: red;
-				background: rgba( 39, 60, 117,0.2 );
+				background: #cdd9de;
 				box-shadow: inset 5px 5px 10px #aeb8bd,
-            				inset -5px -5px 10px #ecfaff;
+							inset -5px -5px 10px #ecfaff;
 			}
 		}
 	}

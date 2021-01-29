@@ -8,8 +8,8 @@ const Footer = () => {
 
 				<h6>Haqqimizda</h6>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-				<span className="phone"><i class="fa fa-phone" aria-hidden="true"></i> (+994) 011 222 33 44</span>
-				<span className="email"><i class="fa fa-map" aria-hidden="true"></i> eurovacancy@gmail.com</span>
+				<span className="phone"><a href="/"><i class="fa fa-phone" aria-hidden="true"></i></a> (+994) 011 222 33 44</span>
+				<span className="email"><a href="/"><i class="fa fa-envelope" aria-hidden="true"></i></a> eurovacancy@gmail.com</span>
 
 				<div className="link-share">
 					<i class="fa fa-facebook" aria-hidden="true"></i>
@@ -28,13 +28,13 @@ const Footer = () => {
 				<a href="#">Təcrübə Proqramı</a>
 			</div>
 
-			<div className="form">
+			<form className="form">
 				<h6>Measj Gonder</h6>
 				<input type="text" placeholder="Ad / Soyad" />
 				<input type="email" placeholder="Email" />
 				<textarea rows="5" cols="15" placeholder="Movzu"></textarea>
 				<button type="submit">Gonder</button>
-			</div>
+			</form>
 
 		</footer>
 	)

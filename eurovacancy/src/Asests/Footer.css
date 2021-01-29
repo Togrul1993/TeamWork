@@ -101,9 +101,11 @@ body {
       z-index: 20;
       height: 30px;
       margin-bottom: 5px; }
-      .euro-footer .about-link-share span i {
-        font-size: 20px;
+      .euro-footer .about-link-share span a {
         margin-right: 5px; }
+        .euro-footer .about-link-share span a i {
+          color: red;
+          font-size: 20px; }
     .euro-footer .about-link-share .link-share {
       position: relative;
       display: -webkit-box;
@@ -191,10 +193,13 @@ body {
       font-weight: 600;
       text-align: center;
       padding: 5px;
+      background: #cdd9de;
+      -webkit-box-shadow: 5px 5px 10px #aeb8bd, -5px -5px 10px #ecfaff;
+              box-shadow: 5px 5px 10px #aeb8bd, -5px -5px 10px #ecfaff;
       z-index: 16; }
       .euro-footer .AdTypes a:hover {
         color: red;
-        background: rgba(39, 60, 117, 0.2);
+        background: #cdd9de;
         -webkit-box-shadow: inset 5px 5px 10px #aeb8bd, inset -5px -5px 10px #ecfaff;
                 box-shadow: inset 5px 5px 10px #aeb8bd, inset -5px -5px 10px #ecfaff; }
   .euro-footer .form {
