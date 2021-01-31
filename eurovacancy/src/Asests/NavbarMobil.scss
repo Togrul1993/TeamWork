@@ -1,0 +1,74 @@
+$txt-color: #fff;
+$a-before-after:#337ab7;
+$navbar-btn-color:#f36969;
+$navbar-btn-color-1:rgba(243,105,105,1);
+$bg-color:hsla(200,40%,30%,0.4);
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+.euro-nav-mobil{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 110px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: $bg-color;
+	z-index: 99;
+
+
+	.row{
+		width: 100%;
+		height: 110px;
+		display: flex;
+
+
+		.mobil-logo{
+			img{
+				width: 120px;
+			}
+		}
+
+
+		.bars{
+			position: relative;
+			align-self: center;
+
+			.bars-items{
+				height: 40px;
+				display: flex;
+				position: relative;
+				flex-flow: column nowrap;
+				justify-content: space-around;
+				align-self: center;
+				align-items: center;
+
+				span{
+					width: 40px;
+					height: 2px;
+					background-color: black;
+
+					&:nth-child(1){
+						width: 30px;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+
+@media (max-width:890px){
+	
+	.euro-nav-mobil{
+		display: flex;
+	}
+}
