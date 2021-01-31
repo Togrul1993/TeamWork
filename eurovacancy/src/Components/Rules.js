@@ -1,10 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Rules = () => {
 	return (
-		<div>
-
-		</div>
+		<>
+			<Navbar />
+			qaydalar
+		</>
 	)
 }
 

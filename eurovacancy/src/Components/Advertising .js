@@ -1,10 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Advertising = () => {
 	return (
-		<div>
-
-		</div>
+		<>
+			<Navbar />
+			reklam
+		</>
 	)
 }
 
