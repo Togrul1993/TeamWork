@@ -102,11 +102,11 @@ body {
       padding-left: 20px;
       font-size: 20px;
       font-weight: 600;
-      border-bottom: 1px solid gray; }
+      border-bottom: 1px solid gray;
+      cursor: pointer; }
       .navbar-mobil-menu .mobil-language-menu span i {
         margin-right: 13px;
-        font-size: 18px;
-        cursor: pointer; }
+        font-size: 18px; }
     .navbar-mobil-menu .mobil-language-menu .language-link-items {
       position: relative;
       display: -webkit-box;

@@ -75,7 +75,7 @@ const NavbarMobilMenu = ({ bars, barsClick }) => {
 
 
 				<div className={landuageBtn ? "mobil-language-menu right-active" : "mobil-language-menu"}>
-					<span><i className="fa fa-arrow-left" aria-hidden="true" onClick={LanguageClick}></i>Menu</span>
+					<span onClick={LanguageClick}><i className="fa fa-arrow-left" aria-hidden="true"></i>Menu</span>
 					<div className="language-link-items">
 						<Link className="language-link" to="#">Aze</Link>
 						<Link className="language-link" to="#">Rus</Link>

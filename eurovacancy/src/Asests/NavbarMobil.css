@@ -11,7 +11,8 @@ body {
   height: 110px;
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-color: #23c0e9; }
   .euro-nav-mobil .row {
     width: 100%;
     height: 110px;
