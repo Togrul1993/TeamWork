@@ -149,7 +149,7 @@ body {
         font-size: 20px;
         margin-right: 10px; }
 
-@media (max-width: 890px) {
+@media (max-width: 1000px) {
   .euro-navbar {
     display: none; } }
 

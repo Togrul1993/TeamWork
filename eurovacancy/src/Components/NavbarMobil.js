@@ -4,7 +4,8 @@ import NavbarMobilMenu from './NavbarMobilMenu';
 
 const NavbarMobil = () => {
 
-	const [bars, setBars] = useState(true)
+	const [bars, setBars] = useState(false)
+
 	const barsClick = () => {
 		setBars(!bars)
 		console.log("Bars Clisir")
@@ -32,7 +33,7 @@ const NavbarMobil = () => {
 
 				</div>
 			</div>
-			<NavbarMobilMenu />
+			<NavbarMobilMenu bars={bars} barsClick={barsClick} />
 		</>
 	)
 }

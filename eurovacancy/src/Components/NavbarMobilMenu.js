@@ -1,34 +1,87 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import logo2 from '../Image/logo.png';
 
-const NavbarMobilMenu = () => {
+const NavbarMobilMenu = ({ bars, barsClick }) => {
+
+	const [navLink] = useState(
+		[
+			{
+				exact: true,
+				title: "AnaSeyfe",
+				to: "/"
+			},
+			{
+				exact: false,
+				title: "Haqqimizda",
+				to: "/about"
+			},
+			{
+				exact: false,
+				title: "Vakansiyalar",
+				to: "/vacancy"
+			},
+			{
+				exact: false,
+				title: "Blog",
+				to: "/blog"
+			},
+			{
+				exact: false,
+				title: "Reklam",
+				to: "/advertising"
+			},
+			{
+				exact: false,
+				title: "Qaydalar",
+				to: "/rules"
+			},
+			{
+				exact: false,
+				title: "Elaqe",
+				to: "/contact"
+			},
+			{
+				exact: false,
+				title: "CV Yerlesdir",
+				to: "/addCv"
+			}
+
+		]
+	)
 
 
-	const [times, setTimes] = useState(true)
+	const [landuageBtn, setLanduageBtn] = useState(false)
 
-	const activeMenu = () => {
-		setTimes(!times)
+	const LanguageClick = () => {
+		setLanduageBtn(!landuageBtn)
 	}
-
-
 
 	return (
 		<>
-			<div className={times ? "navbar-mobil-menu" : "navbar-mobil-menu active"}>
+			<div className={bars ? "navbar-mobil-menu bars-active" : "navbar-mobil-menu"}>
 				<div className="menu-mobil-brand">
 					<img src={logo2} alt="Logo Mobil Menu" />
-					<i className="fa fa-times" aria-hidden="true" onClick={activeMenu}></i>
+					<i className="fa fa-times" aria-hidden="true" onClick={barsClick}></i>
 				</div>
-				<NavLink exact to="/" className="mobil-menu-link" activeClassName="mobil-menu-link-active">AnaSeyfe</NavLink>
-				<NavLink to="/about" className="mobil-menu-link" activeClassName="mobil-menu-link-active">Haqqimizda</NavLink>
-				<NavLink to="/vacancy" className="mobil-menu-link" activeClassName="mobil-menu-link-active">Vakansiyalar</NavLink>
-				<NavLink to="/blog" className="mobil-menu-link" activeClassName="mobil-menu-link-active">Blog</NavLink>
-				<NavLink to="/advertising" className="mobil-menu-link" activeClassName="mobil-menu-link-active">Reklam</NavLink>
-				<NavLink to="/rules" className="mobil-menu-link" activeClassName="mobil-menu-link-active">Qaydalar</NavLink>
-				<NavLink to="/contact" className="mobil-menu-link" activeClassName="mobil-menu-link-active">Elaqe</NavLink>
-				<NavLink to="/addCv" className="mobil-menu-link" activeClassName="mobil-menu-link-active">CV Yerlesdir</NavLink>
-				<button className="mobil-menu-language-btn">Dil Secimi</button>
+
+				{
+					navLink.map((navlink) => (
+						<NavLink exact={navlink.exact} to={navlink.to} className="mobil-menu-link" activeClassName="mobil-menu-link-active">{navlink.title}</NavLink>
+					))
+				}
+
+				<button className="mobil-menu-language-btn" onClick={LanguageClick}>Dil Secimi</button>
+
+
+				<div className={landuageBtn ? "mobil-language-menu right-active" : "mobil-language-menu"}>
+					<span><i className="fa fa-arrow-left" aria-hidden="true" onClick={LanguageClick}></i>Menu</span>
+					<div className="language-link-items">
+						<Link className="language-link" to="#">Aze</Link>
+						<Link className="language-link" to="#">Rus</Link>
+						<Link className="language-link" to="#">Eng</Link>
+					</div>
+				</div>
 
 			</div>
 		</>

@@ -58,7 +58,7 @@ body {
           .euro-nav-mobil .row .bars .bars-items span:nth-child(4) {
             width: 20px; }
 
-@media (max-width: 890px) {
+@media (max-width: 1000px) {
   .euro-nav-mobil {
     display: -webkit-box;
     display: -ms-flexbox;
