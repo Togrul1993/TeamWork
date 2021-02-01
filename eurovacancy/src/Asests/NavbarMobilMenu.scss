@@ -10,12 +10,69 @@ body{
 	
 }
 
+.navbar-mobil-menu.active{
+	left: -100%;
+}
+
+
+.navbar-mobil-menu.bars-active{
+	left: 0;
+}
 
 .navbar-mobil-menu{
 	display: none;
 	position: absolute;
-	z-index: 99;
-	top: 120px;
+	width: 280px;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	left: 0;
+	top: 0;
+	transition: all 0.7s linear;
+
+
+	.menu-mobil-brand{
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		padding: 15px 10px;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom:1px solid grey;
+
+		img{
+			width: 90px;
+		}
+
+		i{
+			font-size: 25px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+	}
+
+	.mobil-menu-link{
+		width: 100%;
+		padding: 15px 5px;
+		text-align: center;
+		text-decoration: none;
+		border-bottom: 1px solid gray;
+		color: black;
+		transition: all 0.6s linear;
+
+		&:hover{
+			background-color: aquamarine;
+		}
+	}
+
+	.mobil-menu-link-active{
+		background-color: aquamarine;
+	}
+
+	.mobil-menu-language-btn{
+
+	}
 }
 
 
@@ -25,5 +82,11 @@ body{
 
 	.navbar-mobil-menu{
 		display: flex;
+		background-color: #fff;
+		z-index: 99;
+
+		.mobil-menu-link{
+			
+		}
 	}
 }

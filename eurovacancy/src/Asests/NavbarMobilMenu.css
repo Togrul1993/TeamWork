@@ -4,16 +4,72 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.navbar-mobil-menu.active {
+  left: -100%; }
+
+.navbar-mobil-menu.bars-active {
+  left: 0; }
+
 .navbar-mobil-menu {
   display: none;
   position: absolute;
-  z-index: 99;
-  top: 120px; }
+  width: 280px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear; }
+  .navbar-mobil-menu .menu-mobil-brand {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding: 15px 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid grey; }
+    .navbar-mobil-menu .menu-mobil-brand img {
+      width: 90px; }
+    .navbar-mobil-menu .menu-mobil-brand i {
+      font-size: 25px;
+      margin-right: 5px;
+      cursor: pointer; }
+  .navbar-mobil-menu .mobil-menu-link {
+    width: 100%;
+    padding: 15px 5px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear; }
+    .navbar-mobil-menu .mobil-menu-link:hover {
+      background-color: aquamarine; }
+  .navbar-mobil-menu .mobil-menu-link-active {
+    background-color: aquamarine; }
 
 @media (max-width: 890px) {
   .navbar-mobil-menu {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    background-color: #fff;
+    z-index: 99; } }
 
 /*# sourceMappingURL=NavbarMobilMenu.css.map */

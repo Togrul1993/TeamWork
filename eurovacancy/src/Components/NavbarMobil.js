@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo_2 from '../Image/logo.png'
+import NavbarMobilMenu from './NavbarMobilMenu';
 
 const NavbarMobil = () => {
+
+	const [bars, setBars] = useState(true)
+	const barsClick = () => {
+		setBars(!bars)
+		console.log("Bars Clisir")
+	}
+
+
 	return (
 		<>
 			<div className="container-fluid euro-nav-mobil">
@@ -12,7 +21,7 @@ const NavbarMobil = () => {
 					</div>
 
 					<div className="col-2 bars">
-						<div className="bars-items">
+						<div className="bars-items" onClick={barsClick}>
 							<span></span>
 							<span></span>
 							<span></span>
@@ -23,7 +32,7 @@ const NavbarMobil = () => {
 
 				</div>
 			</div>
-
+			<NavbarMobilMenu />
 		</>
 	)
 }
