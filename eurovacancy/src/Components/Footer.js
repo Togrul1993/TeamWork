@@ -39,6 +39,24 @@ const Footer = () => {
 					</div>
 
 				</div>
+
+				<div className="row euro-footer-share">
+					<div className="col-lg-4 col-md-6 col-6 ">
+						<p>All copy right</p>
+					</div>
+
+					<div className="col-lg-4 d-md-none ">
+						<i class="fa fa-angle-up" aria-hidden="true"></i>
+					</div>
+
+					<div className="col-lg-4 col-md-6 col-6">
+						Shar
+						<Link to="/"><i class="fa fa-facebook" aria-hidden="true"></i></Link>
+						<Link to="/"><i class="fa fa-twitter" aria-hidden="true"></i></Link>
+						<Link to="/"><i class="fa fa-whatsapp" aria-hidden="true"></i></Link>
+					</div>
+
+				</div>
 			</div>
 		</>
 	)

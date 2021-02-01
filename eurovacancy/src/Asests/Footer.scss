@@ -26,12 +26,12 @@ $font-color: #9b9b9b;
 		position: relative;
 		width: 100%;
 		height: auto;
-		padding: 0;
+		padding-left: 50px;
 		margin: 0;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		padding-top: 25px;
+		padding-top: 35px;
 
 		.euro-footer-about{
 			position: relative;
@@ -41,6 +41,7 @@ $font-color: #9b9b9b;
 			flex-flow: column nowrap;
 			height: 300px;
 			margin-bottom: 50px;
+			margin-bottom: 20px;
 			
 
 			.euro-footer-about-title{
@@ -65,7 +66,7 @@ $font-color: #9b9b9b;
 				text-align: justify;
 				height: 150px;
 				overflow: hidden;
-				
+				width: 220px;
 
 				&::after{
 					content: '';
@@ -86,9 +87,15 @@ $font-color: #9b9b9b;
 				width: 100px;
 				height: 30px;
 				text-align: center;
-				background-color: #353b4a;
-				color: white;
+				background-color: white;
+				color: black;
 				text-decoration: none;
+				transition: all 0.6s linear;
+
+
+				&:hover{
+					background-color: aqua;
+				}
 			}
 		}
 
@@ -99,12 +106,16 @@ $font-color: #9b9b9b;
 			flex-flow: column nowrap;
 			height: 300px;
 			padding: 0;
+			padding-left: 15px;
+			margin-bottom: 20px;
 
 			.euro-footer-menu-title{
 				position: relative;
 				height: 50px;
 				width: 100%;
 				padding: 10px;
+				padding-left: 0;
+				padding-top: 0px;
 				font-size: 30px;
 				font-weight: 600;
 				align-items: flex-start;
@@ -149,6 +160,45 @@ $font-color: #9b9b9b;
 			display: flex;
 			flex-flow: column nowrap;
 			height: 300px;
+			margin-bottom: 20px;
+
+
+			.euro-footer-sticker-title{
+				position: relative;
+				height: 50px;
+				width: 100%;
+				padding: 10px;
+				padding-left: 0;
+				padding-top: 0;
+				font-size: 30px;
+				font-weight: 600;
+				align-items: flex-start;
+				text-align: start;
+				&::after{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					height: 2px;
+					width: 160px;
+					background-color: black;
+				}
+			}
+
+
+			.euro-footer-sticker-link{
+				width: 220px;
+				height: 40px;
+				padding: 10px 15px;
+				text-decoration: none;
+				color: black;
+				transition: all 0.6s linear;
+
+
+				&:hover{
+					background-color: aqua;
+				}
+			}
 		}
 	}
 }
