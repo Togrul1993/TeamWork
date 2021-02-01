@@ -8,7 +8,7 @@ import Rules from './Components/Rules'
 
 const App = () => {
 	return (
-		<div>
+		<>
 			<Router>
 				<Switch>
 					<Route path="/" exact component={Home} />
@@ -18,7 +18,7 @@ const App = () => {
 				</Switch>
 			</Router>
 
-		</div>
+		</>
 	)
 }
 

@@ -12,7 +12,6 @@ const Header = () => {
 			<Navbar />
 			<HeaderBody />
 			<HeaderFooter />
-
 		</div>
 	)
 }

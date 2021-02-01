@@ -4,9 +4,8 @@
   box-sizing: border-box; }
 
 .euro-header {
-  float: left;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   border-top: 3px solid #23c0e9;
   position: relative;
   top: 0;

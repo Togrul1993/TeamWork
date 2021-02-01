@@ -8,12 +8,12 @@ import NavbarMobil from './NavbarMobil'
 
 const Home = () => {
 	return (
-		<div className="container-fluid p-0 home">
-			<NavbarMobil />
+		<>
 			<Navbar />
+			<NavbarMobil />
 			<Header />
 			<Footer />
-		</div>
+		</>
 	)
 }
 

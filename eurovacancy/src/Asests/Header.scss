@@ -8,12 +8,13 @@ $bg-overlay:rgba(14, 20, 39, 0.83);
 
 
 .euro-header{
-	float:left;
+	
 	width:100%;
-	height: 110vh;
+	height: 100vh;
 	border-top:3px solid #23c0e9;
 	position:relative;
 	top: 0;
+	
 	background-size: cover;
 	background-clip: border-box;
 	background-color: hsla(200,40%,30%,.4);

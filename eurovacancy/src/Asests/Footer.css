@@ -1,3 +1,103 @@
-
+.euro-footer {
+  position: relative;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 10px;
+  background-image: url(../Image/footer_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .euro-footer .row {
+    background-color: rgba(46, 87, 107, 0.4);
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 25px; }
+    .euro-footer .row .euro-footer-about {
+      position: relative;
+      display: flex;
+      text-align: center;
+      align-items: flex-start;
+      flex-flow: column nowrap;
+      height: 300px;
+      margin-bottom: 50px; }
+      .euro-footer .row .euro-footer-about .euro-footer-about-title {
+        position: relative;
+        display: flex;
+        height: 40px;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        align-items: flex-start;
+        text-align: start; }
+      .euro-footer .row .euro-footer-about .euro-footer-about-text {
+        padding-top: 10px;
+        position: relative;
+        display: flex;
+        text-align: justify;
+        height: 150px;
+        overflow: hidden; }
+        .euro-footer .row .euro-footer-about .euro-footer-about-text::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 2px;
+          width: 160px;
+          background-color: black; }
+      .euro-footer .row .euro-footer-about .euro-footer-read-more {
+        position: relative;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        background-color: #353b4a;
+        color: white;
+        text-decoration: none; }
+    .euro-footer .row .euro-footer-menu {
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      height: 300px;
+      padding: 0; }
+      .euro-footer .row .euro-footer-menu .euro-footer-menu-title {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: 600;
+        align-items: flex-start;
+        text-align: start; }
+        .euro-footer .row .euro-footer-menu .euro-footer-menu-title::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          width: 160px;
+          background-color: black; }
+      .euro-footer .row .euro-footer-menu .euro-footer-menu-link {
+        width: 220px;
+        height: 40px;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: black;
+        transition: all 0.6s linear; }
+        .euro-footer .row .euro-footer-menu .euro-footer-menu-link:hover {
+          background-color: aqua; }
+      .euro-footer .row .euro-footer-menu .footer-active-link {
+        background-color: antiquewhite; }
+    .euro-footer .row .euro-footer-sticker {
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      height: 300px; }
 
 /*# sourceMappingURL=Footer.css.map */
