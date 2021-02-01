@@ -4,6 +4,10 @@ $navbar-btn-color:#f36969;
 $navbar-btn-color-1:rgba(243,105,105,1);
 $bg-color:hsla(200,40%,30%,0.4);
 
+$main-color: #353b4a;
+$second-color: #23c0e9;
+$font-color: #9b9b9b;
+
 body{
 	padding: 0;
 	margin: 0;
@@ -19,7 +23,7 @@ body{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: $bg-color;
+
 	z-index: 99;
 
 
