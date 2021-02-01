@@ -18,7 +18,7 @@ body{
 }
 
 .euro-nav-mobil{
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	height: 110px;
@@ -26,7 +26,7 @@ body{
 	padding: 0;
 	margin: 0;
 	background-color: $second-color;
-	
+	display: none;
 	
 
 

@@ -6,9 +6,6 @@ body {
 
 .navbar-mobil-menu.bars-active {
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: all 0.6s linear;
   transition: all 0.6s linear; }
 

@@ -5,19 +5,20 @@ body {
           box-sizing: border-box; }
 
 .euro-navbar {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0;
-  border-top: none; }
+  border-top: none;
+  z-index: 95;
+  background-color: #23c0e9; }
   .euro-navbar .row {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 0;
-    border: 2px solid gray; }
+    margin: 0; }
     .euro-navbar .row .logoImgBox {
       padding: 0;
       height: 120px; }
