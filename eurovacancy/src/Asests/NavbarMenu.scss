@@ -2,7 +2,7 @@ $txt-color: #fff;
 $a-before-after:#337ab7;
 $navbar-btn-color:#f36969;
 $navbar-btn-color-1:rgba(243,105,105,1);
-
+$font-color: #9b9b9b;
 
 body{
 	padding: 0;
@@ -36,7 +36,7 @@ body{
 				justify-content: center;
 			
 				a.activelink{
-					background-color: rgba(243,105,105,0.2)
+					background-color: rgba(255,255,255,0.5)
 				}
 			
 				.menulink{
@@ -46,7 +46,7 @@ body{
 					display: flex;
 					padding: 10px 20px 10px 20px;
 					font-size: 14px;
-					color: $txt-color;
+					color:$font-color;
 					transition: all 0.6s linear;
 		
 					&:hover{

@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Eror404 from './Components/Eror404';
 import Advertising from './Components/Advertising ';
 import Rules from './Components/Rules'
+import Header from './Components/Header';
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 			<Router>
 				<Switch>
 					<Route path="/" exact component={Home} />
+					<Route path="#header" component={Header} />
 					<Route path="/advertising" component={Advertising} />
 					<Route path="/rules" component={Rules} />
 					<Route path="*" component={Eror404} />

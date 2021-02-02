@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import NavbarMobil from './NavbarMobil'
+import Header from './Header'
 
 
 const Advertising = () => {
@@ -10,6 +11,7 @@ const Advertising = () => {
 			<NavbarMobil />
 
 			<Navbar />
+			<Header />
 			<Footer />
 		</>
 	)

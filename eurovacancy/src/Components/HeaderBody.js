@@ -31,7 +31,7 @@ const HeaderBody = () => {
 						<option>Qax</option>
 					</select>
 
-					<button className="euro-header-body-submit" type="submit">Search</button>
+					<button className="euro-header-body-submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
 				</form>
 
 

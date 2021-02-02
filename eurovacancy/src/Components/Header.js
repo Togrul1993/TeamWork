@@ -6,7 +6,7 @@ import HeaderFooter from './HeaderFooter'
 
 const Header = () => {
 	return (
-		<div className=" euro-header">
+		<div className=" euro-header" id="header">
 			<div className="header-overlay"></div>
 			<HeaderBody />
 			<HeaderFooter />

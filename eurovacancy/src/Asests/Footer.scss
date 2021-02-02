@@ -3,9 +3,12 @@ $a-before-after:#337ab7;
 $navbar-btn-color:#f36969;
 $navbar-btn-color-1:rgba(243,105,105,1);
 $bg-color:hsla(200,40%,30%,0.4);
-$main-color: #353b4a;
+
 $second-color: #23c0e9;
 $font-color: #9b9b9b;
+$main-color: #353b4a;
+
+$second-color_:rgba(35,192,233,1);
 
 
 .euro-footer{
@@ -22,7 +25,7 @@ $font-color: #9b9b9b;
 
 
 	.row{
-		background-color:$bg-color;
+		background-color:rgba(35,192,233,0.4);
 		position: relative;
 		width: 100%;
 		height: auto;
@@ -83,11 +86,9 @@ $font-color: #9b9b9b;
 
 			.euro-footer-read-more{
 				position: relative;
-				
 				width: 100px;
 				height: 30px;
-				text-align: center;
-				background-color: white;
+				background-color: rgba(255,255,255,0.5);
 				color: black;
 				text-decoration: none;
 				transition: all 0.6s linear;
@@ -200,5 +201,100 @@ $font-color: #9b9b9b;
 				}
 			}
 		}
+	}
+
+	.euro-footer-share{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		padding: 20px 40px;
+
+		.euro-footer-share-copy-right{
+			color: #000;
+			font-size:18px;
+			align-self: center;
+			text-align: center;
+		}
+
+		.euro-footer-angle-up{
+			position: relative;
+			align-items: center;
+			width: 100%;
+			align-self: center;
+			text-align: center;
+
+			.fa-angle-up{
+				cursor: pointer;
+				position: relative;
+				font-size: 45px;
+				align-self: center;
+				line-height: 25px;
+				height: 50px;
+				width: 50px;
+				padding: 5px;
+				border: 2px solid black;
+				border-radius: 50%;
+				color: black;
+				text-decoration: none;
+			}
+		}
+
+		.euro-footer-share{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-self: center;
+
+			.share-link{
+				position: relative;
+				text-align: center;
+				text-decoration: none;
+				color: black;
+				font-size: 25px;
+				padding: 5px;
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				border: none;
+				line-height: 35px;
+				background-color: $second-color_;
+				color: $txt-color;
+			}
+		}
+	}
+}
+
+
+@media (max-width:1000px){
+	.euro-footer{
+		
+		.euro-footer-share{
+			flex-flow: column wrap;
+			width: 100%;
+			padding: 20px 20px;
+
+			.euro-footer-share-copy-right{
+				font-size: 18px;
+			}
+
+			.euro-footer-angle-up{
+				display: none;
+			}
+
+			.euro-footer-share{
+				width: 100%;
+
+				.share-link{
+					padding: 3px;
+					height: 35px;
+					width: 35px;
+					border-radius: 50%;
+					border: none;
+					line-height: 25px;
+					font-size: 16px;
+				}
+			}
+		}
+
 	}
 }

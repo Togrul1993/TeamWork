@@ -7,6 +7,7 @@ $bg-color:hsla(200,40%,30%,0.8);
 $main-color: #353b4a;
 $second-color: #23c0e9;
 $font-color: #9b9b9b;
+$second-color_:rgba(35,192,233,1);
 
 body{
 	padding: 0;
@@ -18,13 +19,11 @@ body{
 
 .euro-navbar{
 	position: relative;
-	top: 0;
-	left: 0;
 	width: 100%;
 	padding: 0;
 	border-top: none;
 	z-index: 95;
-	background-color: $second-color;
+	background-color: rgba(35,192,233,0.4);
 
 	.row{
 		position: relative;
@@ -71,7 +70,7 @@ body{
 					width: 40px;
 					padding: 7px;
 					font-size: 25px;
-					color: #fff;
+					color: black;
 					border: 2px solid gray;
 					border-radius: 5px;
 					cursor: pointer;
@@ -80,6 +79,7 @@ body{
 					&:hover{
 						background-color: #f36969;
 						border: 1px solid #f36969;
+						color: white;
 					}
 
 
@@ -155,7 +155,7 @@ body{
 			width: 80px;
 			padding:8px;
 			font-size: 20px;
-			font-weight: 700;
+			font-weight: 400;
 			color: #fff;
 			margin-right: 15px;
 			transition: all 0.6s linear;
@@ -164,12 +164,16 @@ body{
 			&:hover{
 				background-color: transparent;
 				border: 1px solid gray;
+				color: black;
 			}
 
 			i{
+				position: relative;
 				font-size: 20px;
 				margin-right: 10px;
-				
+				font-weight: lighter;
+				display: flex;
+				align-self: center;
 			}
 		}
 	}

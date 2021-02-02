@@ -55,6 +55,10 @@ $font-color: #9b9b9b;
 			color: wheat;
 		}
 
+		::-webkit-input-placeholder{
+			color: white;
+		}
+
 
 		.euro-header-body-location{
 			padding: 8px ;
@@ -142,9 +146,6 @@ $font-color: #9b9b9b;
 				color: white;
 			}
 
-			::-webkit-input-placeholder{
-				color: white;
-			}
 
 			.euro-header-body-location{
 				width: 100%;
