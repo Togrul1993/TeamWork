@@ -6,7 +6,7 @@ const HeaderBody = () => {
 		<>
 			<div className="euro-header-body">
 
-				<h3 className="header-body-title">3,000+ Browse Jobs</h3>
+				<h3 className="header-body-title"><span>3,000+</span> Browse Jobs</h3>
 
 				<p className="header-body-text">Find Jobs, Employment & Career Opportunities</p>
 
