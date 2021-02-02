@@ -12,6 +12,7 @@ import './Asests/NavbarMobil.scss';
 import './Asests/Footer.scss';
 import './Asests/NavbarMobilMenu.scss';
 import './Asests/HeaderFooter.scss';
+import './Asests/HeaderBody.scss'
 // Style Components end
 
 ReactDOM.render(<App />, document.getElementById('root'));
