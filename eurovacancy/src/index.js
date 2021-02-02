@@ -5,13 +5,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 // Style Components start
-import './Asests/Header.css';
-import './Asests/Navbar.css';
-import './Asests/NavbarMenu.css';
-import './Asests/NavbarMobil.css';
-import './Asests/Footer.css';
-import './Asests/NavbarMobilMenu.css';
-
+import './Asests/Header.scss';
+import './Asests/Navbar.scss';
+import './Asests/NavbarMenu.scss';
+import './Asests/NavbarMobil.scss';
+import './Asests/Footer.scss';
+import './Asests/NavbarMobilMenu.scss';
+import './Asests/HeaderFooter.scss';
 // Style Components end
 
 ReactDOM.render(<App />, document.getElementById('root'));
