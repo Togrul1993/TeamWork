@@ -12,6 +12,7 @@ $second-color_:rgba(35,192,233,1);
 
 
 .euro-footer{
+
 	position: relative;
 	padding: 0;
 	height: auto;
@@ -23,6 +24,18 @@ $second-color_:rgba(35,192,233,1);
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	.euro-footer-logo{
+		width: 100%;
+		padding: 20px 20px ;
+		position: relative;
+		text-align: center;
+		background-color:rgba(35,192,233,0.4);
+		border-bottom: 1px solid black;
+
+		img{
+			width: 120px;
+		}
+	}
 
 	.row{
 		background-color:rgba(35,192,233,0.4);

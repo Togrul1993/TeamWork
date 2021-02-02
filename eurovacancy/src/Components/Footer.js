@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+import logofooter from '../Image/logo.png'
 
 const Footer = () => {
 
 	return (
 		<>
 			<div className="container-fluid euro-footer">
+
+				<div className="euro-footer-logo">
+					<img src={logofooter} alt="Footer Logo" />
+				</div>
+
 				<div className="row d-flex justify-content-start">
 
 					<div className="col-lg-4 col-md-4 col-sm-6 col-12 euro-footer-about">
