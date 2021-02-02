@@ -15,7 +15,7 @@ const HeaderBody = () => {
 					<input className="euro-header-body-search" type="search" placeholder="Jobs Search" />
 
 					<select className="euro-header-body-location">
-						<option>Location</option>
+						<option>Select Location</option>
 						<option>Baki</option>
 						<option>Seki</option>
 						<option>Gence</option>
@@ -24,11 +24,11 @@ const HeaderBody = () => {
 
 
 					<select className="euro-header-body-experience">
-						<option>Location</option>
-						<option>Baki</option>
-						<option>Seki</option>
-						<option>Gence</option>
-						<option>Qax</option>
+						<option>Experience</option>
+						<option>FrontEnd Developer</option>
+						<option>BackEnd Developer</option>
+						<option>JavaScript</option>
+						<option>React js</option>
 					</select>
 
 					<button className="euro-header-body-submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>

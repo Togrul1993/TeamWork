@@ -11,7 +11,7 @@ $font-color: #9b9b9b;
 
 .euro-header-body{
 	position: relative;
-	padding: 20px 60px;
+	padding: 20px 40px;
 	z-index:16;
 	width: 850px;
 	align-items: center;
@@ -41,7 +41,7 @@ $font-color: #9b9b9b;
 		display: flex;
 		flex-flow: row wrap;
 		
-		padding: 40px;
+		padding: 40px 20px;
 		background-color: rgba(255,255,255,0.2);
 
 		.euro-header-body-search{
@@ -65,17 +65,22 @@ $font-color: #9b9b9b;
 			padding-right: 15px;
 			border: none;
 			outline: none;
+			font-size: 14px;
 			margin-right: 5px;
 			background-color: transparent;
 			border-bottom: 2px solid black;
 			color: white;
 			
+			option{
+				color: black;
+			}
 
 		}
 
 		.euro-header-body-experience{
 			padding: 8px ;
 			padding-right: 15px;
+			font-size: 14px;
 			border: none;
 			outline: none;
 			margin-right: 5px;
@@ -83,11 +88,15 @@ $font-color: #9b9b9b;
 			border-bottom: 2px solid black;
 			color: white;
 			
+			option{
+				color: black;
+			}
 		}
 
 		.euro-header-body-submit{
 			padding: 8px ;
 			padding-right: 15px;
+			font-size: 14px;
 			border: none;
 			outline: none;
 			margin-right: 5px;

@@ -21,6 +21,14 @@ $font-color: #9b9b9b;
 
 		.euro-header-footer-col{
 			text-decoration: none;
+			transition: all 0.6s linear;
+
+			:hover{
+				transform: scale(1.1);
+				background-color:#23c0e9;
+				z-index: 111;
+				border: none;
+			}
 
 			.euro-header-jobs{
 				display: flex;
@@ -29,7 +37,7 @@ $font-color: #9b9b9b;
 				border: 1px solid grey;
 				padding: 15px 10px;
 				text-align: center;
-				color: $font-color;
+				color: black;
 				text-decoration: none;
 
 				i{
