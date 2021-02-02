@@ -16,6 +16,8 @@ $font-color: #9b9b9b;
 	width: 850px;
 	align-items: center;
 	color: white;
+	margin: auto;
+	margin-top: 70px;
 
 	.header-body-title{
 		width: 100%;
@@ -57,6 +59,8 @@ $font-color: #9b9b9b;
 			margin-right: 5px;
 			background-color: transparent;
 			border-bottom: 2px solid black;
+			color: white;
+			
 
 		}
 
@@ -68,6 +72,8 @@ $font-color: #9b9b9b;
 			margin-right: 5px;
 			background-color: transparent;
 			border-bottom: 2px solid black;
+			color: white;
+			
 		}
 
 		.euro-header-body-submit{
@@ -78,6 +84,7 @@ $font-color: #9b9b9b;
 			margin-right: 5px;
 			background-color: transparent;
 			border-bottom: 2px solid black;
+			color: white;
 		}
 	}
 
@@ -91,9 +98,6 @@ $font-color: #9b9b9b;
 			margin-right: 10px;
 		}
 
-		h6{
-
-		}
 
 		.header-body-link-job{
 			margin-left: 10px;
@@ -112,27 +116,61 @@ $font-color: #9b9b9b;
 	.euro-header-body{
 		width: 100%;
 		top: 0;
+		padding: 20px 40px;
 		
 		.header-body-title{
-			font-size: 30px;
+			font-size: 45px;
 		}
 
 		form{
+			position: relative;
 			width: 100%;
 			flex-flow: column nowrap;
-			padding: 10px;
+			display: flex;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
 
 			.euro-header-body-search{
 				width: 100%;
+				margin-bottom: 15px;
+				color: white;
+			}
+
+			::-webkit-input-placeholder{
+				color: white;
 			}
 
 			.euro-header-body-location{
 				width: 100%;
+				margin-bottom: 15px;
+				
+			
 			}
 
 			.euro-header-body-experience{
 				width: 100%;
+				margin-bottom: 15px;
+			
 			}
+
+			.euro-header-body-submit{
+				margin-top: 15px;
+				width: 50%;
+				border: 2px solid black;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width:435px){
+	.euro-header-body{
+		padding: 20px;
+
+		.header-body-title{
+			font-size: 30px;
 		}
 	}
 }
