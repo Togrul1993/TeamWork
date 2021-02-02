@@ -10,13 +10,10 @@ $font-color: #9b9b9b;
 
 
 .euro-header-body{
-	position: absolute;
+	position: relative;
 	padding: 20px 60px;
 	z-index:16;
-	width: 900px;
-	top: 30%;
-	left: 30%;
-	transform: translate(-30%,-30%);
+	width: 850px;
 	align-items: center;
 	color: white;
 
@@ -105,6 +102,36 @@ $font-color: #9b9b9b;
 
 			&:hover{
 				color: #23c0e9;
+			}
+		}
+	}
+}
+
+
+@media (max-width:1000px){
+	.euro-header-body{
+		width: 100%;
+		top: 0;
+		
+		.header-body-title{
+			font-size: 30px;
+		}
+
+		form{
+			width: 100%;
+			flex-flow: column nowrap;
+			padding: 10px;
+
+			.euro-header-body-search{
+				width: 100%;
+			}
+
+			.euro-header-body-location{
+				width: 100%;
+			}
+
+			.euro-header-body-experience{
+				width: 100%;
 			}
 		}
 	}
