@@ -1,0 +1,185 @@
+/* vacancy starts */
+.vacancy-wrap{
+    background-color: #f9f9f9;
+  }
+  
+  .sorting{
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .job-listing,.search-by{
+    background-color: #f9f9f9;
+  }
+  .job{
+    padding: 29px;
+    border: 1px solid #e9e9e9;
+    background-color: white;
+  }
+  .job:hover{
+    border: 1px solid #23c0e9;
+  }
+  
+  .job-image{
+    width: 120px;
+  }
+  .job-image img{
+    width: 100%;
+  }
+  .job-overview{
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .job-salary,.job-location{
+    display: flex;
+    align-items: center;
+    margin: 3px;
+  }
+  .job-overview i{
+    color: #f36969;
+  }
+  .job-overview span{
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  .job-detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .job-detail>div{
+    margin: 5px 8px;
+  }
+  .job-detail .favorite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f36969;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+  }
+  .job-detail .job-type,.job-detail .view-more{
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .view-more{
+    cursor: pointer;
+  }
+  .job-type{
+    background-color: #37d09c;
+  }
+  .view-more{
+    background-color: #f36969;
+  }
+  .view-more a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .search-by{
+    width: 300px;
+    margin-left: 20px;
+    margin: 0 auto;
+    margin-top: -15px;
+  }
+  .search-header{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 15px;
+    color: white;
+    background-color: #23c0e9;
+    font-size: 20px;
+    margin-top: 20px;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .categories,.locations,.salaries,.types{
+    background-color: white;
+    padding: 30px 0;
+    border: 1px solid #e9e9e9;
+    user-select: none;
+  
+  }
+  .search-by ul li{
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .search-by label{
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .search-by input{
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 8px;
+    left: -5px;
+    height: 16px;
+    width: 16px;
+    margin-right: 20px;
+    border: 1px solid #f36969;  
+    border-radius: 4px;
+  }
+  .checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: -2px;
+    width: 6px;
+    height: 16px;
+    border: solid #f36969;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .search-by input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .enumerate{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .enumerate ul li{
+    background-color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .enumerate ul li:hover{
+    background-color: #23c0e9;
+    color: white;
+  }
+  
+  /* vacancy ends */

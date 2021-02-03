@@ -8,6 +8,7 @@ import Rules from './Components/Rules'
 import Header from './Components/Header';
 import Blog from './Components/Blog';
 import Contact from './Components/Contact';
+import Vacancy from './Components/Vacancy';
 
 const App = () => {
 	return (
@@ -17,6 +18,7 @@ const App = () => {
 					<Route path="/" exact component={Home} />
 					<Route path="#header" component={Header} />
 					<Route path="/advertising" component={Advertising} />
+					<Route path="/vacancies" component={Vacancy} />
 					<Route path="/rules" component={Rules} />
 					<Route path="*" component={Eror404} />
 					<Route path="/contact" component={Contact} />
@@ -28,4 +30,4 @@ const App = () => {
 	)
 }
 
-export default App
+export default App;

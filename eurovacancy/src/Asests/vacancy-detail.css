@@ -1,0 +1,133 @@
+.vacancy-detail{
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.job-about{
+    background-color: white;
+    padding: 30px 80px;
+}
+.job-description{
+    margin-top: 25px;
+}
+.job-description h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.job-description h2::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #23c0e9;
+    width: 50px;
+    top: 100%;
+    left: 0%;
+    margin: 5px 0;
+}
+
+.job-text{
+    color: #797979;
+    line-height: 23px;
+    margin-top:50px;
+    padding: 10px 0;
+}
+
+.job-text ul li{
+    list-style-type: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.job-text ul li::before {
+    content: "\2022";
+    color: #f36969;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+.job-single-overview{
+    background-color: white;
+    width: 100%;
+}
+.job-single-overview .overview-header{
+    text-transform: uppercase;
+    background-color: #23c0e9;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.overview-header h4 {
+    margin-left:20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.job-image{
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+}
+.job-image img{
+    width: 100%;
+}
+.job-title{
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+}
+.job-title h4{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.job-favorite{
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    margin-right: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #f36969;
+}
+.fa-heart{
+    text-align: center;
+}
+.job-favorite:hover{
+    background-color: #f36969;
+    color: white;
+}
+.job-type{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0;
+    width: 100px;
+    background-color: #37d09c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.params-wrap{
+    display: flex;
+}
+.job-params{
+    padding: 20px 60px;
+}
+.params-icon{
+    color: #f36969;
+}
+.params{
+    padding-left: 10px;
+}
+.params ul{
+    list-style: none;
+}
+.params ul li:first-child{
+    font-weight: 500;
+}
+.params ul li:nth-child(2){
+    color: #797979;
+}
