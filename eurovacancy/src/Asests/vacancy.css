@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 /* vacancy starts */
 .vacancy-wrap{
     background-color: #f9f9f9;
@@ -63,6 +64,11 @@
     cursor: pointer;
     width: 35px;
     height: 35px;
+    border-radius: 50%;
+  }
+  .job-detail .favorite:hover{
+    color: white;
+    background-color: #f36969;
   }
   .job-detail .job-type,.job-detail .view-more{
     width: 80px;
@@ -88,7 +94,7 @@
   }
   
   .search-by{
-    width: 300px;
+    width: 100%;
     margin-left: 20px;
     margin: 0 auto;
     margin-top: -15px;
@@ -117,8 +123,8 @@
   .search-by ul li{
     position: relative;
     list-style-type: none;
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 16px;
+    margin: 10px 0;
   }
   .search-by label{
     display: inline-block;

@@ -132,6 +132,32 @@ export class ContextProvider extends Component {
                 id:4,
                 name:"Management"
             }
+        ],
+        blogs:[
+            {
+                id:1,
+                title:"Hey Seeker, It’s Time",
+                description:"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
+                date:"01 Feb,2021",
+                image:"..\\images\\car_img1.jpg",
+                commentator:"John Doe"
+            },
+            {
+                id:2,
+                title:"Hey Seeker, It’s Time",
+                description:"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
+                date:"02 Feb,2021",
+                image:"..\\images\\car_img2.jpg",
+                commentator:"John Doe"
+            },
+            {
+                id:3,
+                title:"Hey Seeker, It’s Time",
+                description:"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
+                date:"03 Feb,2021",
+                image:"..\\images\\car_img3.jpg",
+                commentator:"John Doe"
+            }
         ]
     }
     render() {

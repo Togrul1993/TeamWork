@@ -12,7 +12,11 @@ import './Asests/NavbarMobil.scss';
 import './Asests/Footer.scss';
 import './Asests/NavbarMobilMenu.scss';
 import './Asests/HeaderFooter.scss';
-import './Asests/HeaderBody.scss'
+import './Asests/HeaderBody.scss';
+import './Asests/vacancy.css';
+import './Asests/vacancy-detail.css';
+import './Asests/about.css';
+import './Asests/addcv.css';
 // Style Components end
 
 ReactDOM.render(

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Consumer from '../context';
 import Jobs from './Jobs';
 import '../Asests/vacancy.css'
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class Vacancy extends Component {
     render() {
@@ -12,7 +12,7 @@ class Vacancy extends Component {
                 <div className="vacancy-wrap my-5 py-5">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-8 col-md-10">
+                            <div className="col-lg-9 col-md-12">
                                 <div className="sorting">
                                     <div className="row">
                                         <div className="col-md-6">
@@ -46,7 +46,7 @@ class Vacancy extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-12">
+                            <div className="col-lg-3 col-md-12">
                                 <div className="search-by">
                                     <div className="by-category my-3">
                                         <div className="search-header">

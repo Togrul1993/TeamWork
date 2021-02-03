@@ -1,0 +1,68 @@
+.add-cv{
+    margin-top: 100px;
+    margin: auto;
+    width: 800px;
+    background-color: white;
+}
+.container{
+    display: block;
+    background-color: white;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+label{
+    margin-left: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.form-input{
+    /* width: 97%; */
+    padding: 5px;
+    height: 30px;
+    background-color: white;
+    color: #212529;
+    margin-left: 10px;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+}
+select{
+    padding: 10px 0;
+    display: inline-block;
+    color: #212529;
+    width: 100%;
+    margin-left: 10px;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+}
+textarea{
+    padding: 10px 15px;
+    border: 1px solid #e9e9e9;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+.form-header h3{
+    text-transform: uppercase;
+    color: #797979;
+    text-align: center;
+    font-weight: 500;
+}
+.btn-post{
+    margin-left: 12px;
+    width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f36969;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.btn-post:hover{
+    background-color: #23c0e9;
+}

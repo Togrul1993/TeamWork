@@ -5,12 +5,7 @@ class Job extends Component {
     render() {
         const { name, salary, type, location, image, experience } = this.props;
 
-        const enter = (e) => {
-            e.target.children[0].classList.replace('far', 'fas')
-        }
-        const leave = (e) => {
-            e.target.children[0].classList.replace('fas', 'far')
-        }
+        
 
         return (
             <Router>
@@ -35,7 +30,7 @@ class Job extends Component {
                             </div>
                         </div>
                         <div className="job-detail">
-                            <div onMouseEnter={enter} onMouseLeave={leave} className="favorite">
+                            <div className="favorite">
                                 <i className="far fa-heart"></i>
                             </div>
                             <div className="job-type">
