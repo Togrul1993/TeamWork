@@ -11,7 +11,7 @@ const NavbarMenu = () => {
 				<ul className="navbar-menu-items">
 					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" exact to="/" className="menulink">AnaSeyfe</NavLink></li>
 					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" to="/about" className="menulink">Haqqimizda</NavLink></li>
-					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" to="/allvacancy" className="menulink">Vakansiyalar</NavLink></li>
+					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" to="/vacancies" className="menulink">Vakansiyalar</NavLink></li>
 					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" to="/blog" className="menulink">Blog</NavLink></li>
 					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" to="/advertising" className="menulink">Reklam</NavLink></li>
 					<li className="navbar-menu-items" ><NavLink activeClassName="activelink" to="/rules" className="menulink">Qaydalar</NavLink></li>

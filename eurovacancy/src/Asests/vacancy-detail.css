@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.vacancy-detail{
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.job-about{
+    background-color: white;
+    padding: 30px 80px;
+    border-bottom: 1px solid #f9f9f9;
+}
+.job-description{
+    margin-top: 25px;
+}
+.job-description h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.job-description h2::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #23c0e9;
+    width: 50px;
+    top: 100%;
+    left: 0%;
+    margin: 5px 0;
+}
+
+.job-text{
+    color: #797979;
+    line-height: 23px;
+    margin-top:50px;
+    padding: 10px 0;
+}
+.job-share{
+    background-color: white;
+    padding: 30px 80px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.job-share .sosial-icons{
+    display: flex;
+    justify-content: space-between;
+    color: #797979;
+    width: 50%;
+}
+.job-share .sosial-icons>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+.job-share .sosial-icons>div:hover{
+    background-color: #23c0e9;
+    color: white;
+}
+.job-text ul li{
+    list-style-type: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.job-text ul li::before {
+    content: "\2022";
+    color: #f36969;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+.job-single-overview{
+    background-color: white;
+    width: 100%;
+}
+.job-single-overview .overview-header{
+    text-transform: uppercase;
+    background-color: #23c0e9;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.overview-header h4 {
+    margin-left:20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.job-title .job-image{
+    width: 100px;
+    margin: auto;
+}
+.job-image img{
+    width: 100%;
+}
+.vacancy-detail .job-title{
+    text-align: center;
+}
+.job-title h4{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.job-favorite{
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    margin-right: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #f36969;
+    padding: 2px;
+}
+.fa-heart{
+    text-align: center;
+}
+.job-favorite:hover{
+    background-color: #f36969;
+    color: white;
+}
+.job-type{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0;
+    width: 100px;
+    background-color: #37d09c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.params-wrap{
+    display: flex;
+}
+.job-params{
+    padding: 20px 60px;
+}
+.params-icon{
+    color: #f36969;
+}
+.params{
+    padding-left: 10px;
+}
+.params ul{
+    list-style: none;
+}
+.params ul li:first-child{
+    font-weight: 500;
+}
+.params ul li:nth-child(2){
+    color: #797979;
+}
+
+.apply{
+    background-color: #23c0e9;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 50px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.apply:hover{
+    background-color: #f36969;
+}
+
+.job-images{
+    width: 100%;
+}
+.job-images .selected-image{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px;
+    border: 1px solid #4144;
+    background-color: black;
+}
+.job-images .selected-image img{
+    width: 100%;
+    height: 100%;
+}
+.selected-image:hover{
+    opacity: 0.8;
+}
+.image-settings{
+    display: none;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+}
+.image-settings>div{
+    background-color: #00000042;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin: 10px 0;
+}
+.image-list{
+    display: flex;
+    margin: 50px 0;
+    width: 100%;
+}
+.single-image{
+    position: relative;
+    width: 22%;
+}
+.single-image img{
+    width: 100%;
+}
+.image-list .single-image::after{
+    content: "";
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #23c0e9;
+    transition: all 0.3s;
+}
+.image-list .single-image:hover::after{
+    content: "";
+    width: 100%;
+}
+.image-list .single-image{
+    margin: 0 20px;
+}
+.modal input{
+    width: 85%;
+}
+textarea{
+    width: 91%;
+}
