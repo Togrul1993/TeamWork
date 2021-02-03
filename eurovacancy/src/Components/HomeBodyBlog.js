@@ -3,6 +3,7 @@ import { Image, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import img from '../Image/blog.jpg'
 
+
 const HomeBodyBlog = () => {
 
 	const [blogitems] = useState([

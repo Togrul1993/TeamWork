@@ -5,7 +5,6 @@ import { newcontext } from '../context';
 
 
 
-
 const HomeBodyVacancy = () => {
 	const context = useContext(newcontext);
 	const jobs = (context.jobs)

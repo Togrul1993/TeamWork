@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {ContextProvider} from './context';
+import { ContextProvider } from './context';
 
 
 // Style Components start
@@ -22,5 +22,5 @@ import './Asests/addcv.css';
 ReactDOM.render(
     <ContextProvider>
         <App />
-    </ContextProvider>, 
+    </ContextProvider>,
     document.getElementById('root'));

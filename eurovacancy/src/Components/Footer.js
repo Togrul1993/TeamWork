@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logofooter from '../Image/logo.png'
+import '../Asests/Footer.scss'
 
 const Footer = () => {
 

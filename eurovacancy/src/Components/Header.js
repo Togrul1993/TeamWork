@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderBody from './HeaderBody'
 import HeaderFooter from './HeaderFooter'
-
+import '../Asests/Header.scss'
 
 
 const Header = () => {

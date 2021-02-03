@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo2 from '../Image/logo.png';
 
+
 const NavbarMobilMenu = ({ bars, barsClick }) => {
 
 	const [navLink] = useState(
