@@ -2,13 +2,21 @@ import React, { Component } from 'react';
 import Consumer from '../context';
 import Jobs from './Jobs';
 import '../Asests/vacancy.css'
+import Header from './Header';
+import Footer from './Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './Navbar';
+import NavbarMobil from './NavbarMobil';
 
 class Vacancy extends Component {
     render() {
 
         return (
+
             <Router>
+                <NavbarMobil />
+                <Navbar />
+                <Header />
                 <div className="vacancy-wrap my-5 py-5">
                     <div className="container">
                         <div className="row">
@@ -188,6 +196,7 @@ class Vacancy extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </Router>
         );
     }

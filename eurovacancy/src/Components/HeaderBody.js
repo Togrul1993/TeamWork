@@ -11,7 +11,7 @@ const HeaderBody = () => {
 				<p className="header-body-text">Find Jobs, Employment & Career Opportunities</p>
 
 
-				<form>
+				<form className="euro-header-body-form">
 					<input className="euro-header-body-search" type="search" placeholder="Jobs Search" />
 
 					<select className="euro-header-body-location">

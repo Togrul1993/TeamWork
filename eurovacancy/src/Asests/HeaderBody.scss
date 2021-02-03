@@ -22,7 +22,7 @@ $font-color: #9b9b9b;
 	.header-body-title{
 		width: 100%;
 		font-size: 65px;
-
+		margin-bottom: 25px;
 
 		span{
 			color: #23c0e9;
@@ -34,19 +34,19 @@ $font-color: #9b9b9b;
 		width: 100%;
 		color: grey;
 		margin-bottom: 45px;
+		font-size: 16px;
 	}
 
-	form{
-		width: 100%;
+	.euro-header-body-form{
+		width: 800px;
 		display: flex;
 		flex-flow: row wrap;
-		
-		padding: 40px 20px;
+		margin: auto;
 		background-color: rgba(255,255,255,0.2);
 
 		.euro-header-body-search{
-			padding: 8px;
-			width: 300px;
+			padding: 6px;
+			width: 250px;
 			border: none;
 			outline: none;
 			margin-right: 5px;
@@ -57,10 +57,12 @@ $font-color: #9b9b9b;
 
 		::-webkit-input-placeholder{
 			color: white;
+			font-size: 16px;
 		}
 
 
 		.euro-header-body-location{
+			width: 130px;
 			padding: 8px ;
 			padding-right: 15px;
 			border: none;
@@ -78,6 +80,7 @@ $font-color: #9b9b9b;
 		}
 
 		.euro-header-body-experience{
+			width: 130px;
 			padding: 8px ;
 			padding-right: 15px;
 			font-size: 14px;
@@ -94,6 +97,7 @@ $font-color: #9b9b9b;
 		}
 
 		.euro-header-body-submit{
+			width: 90px;
 			padding: 8px ;
 			padding-right: 15px;
 			font-size: 14px;
@@ -111,6 +115,7 @@ $font-color: #9b9b9b;
 		display: flex;
 		flex-flow: row wrap;
 		margin-top: 15px;
+		align-items: center;
 
 		i{
 			margin-right: 10px;
@@ -140,33 +145,37 @@ $font-color: #9b9b9b;
 			font-size: 45px;
 		}
 
-		form{
+		.euro-header-body-form{
 			position: relative;
 			width: 100%;
 			flex-flow: column nowrap;
 			display: flex;
-			padding: 20px;
+			
 			justify-content: center;
 			align-items: center;
 
 			.euro-header-body-search{
 				width: 100%;
+				margin: 0;
 				margin-bottom: 15px;
-				color: white;
+				
 			}
 
 
 			.euro-header-body-location{
 				width: 100%;
+				margin: 0;
 				margin-bottom: 15px;
 				
+
 			
 			}
 
 			.euro-header-body-experience{
 				width: 100%;
+				margin: 0;
 				margin-bottom: 15px;
-			
+				
 			}
 
 			.euro-header-body-submit{

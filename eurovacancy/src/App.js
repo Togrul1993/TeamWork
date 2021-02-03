@@ -5,7 +5,6 @@ import Home from './Components/Home';
 import Eror404 from './Components/Eror404';
 import Advertising from './Components/Advertising ';
 import Rules from './Components/Rules'
-import Header from './Components/Header';
 import Blog from './Components/Blog';
 import Contact from './Components/Contact';
 import Vacancy from './Components/Vacancy';
@@ -19,16 +18,16 @@ const App = () => {
 			<Router>
 				<Switch>
 					<Route path="/" exact component={Home} />
-					<Route path="#header" component={Header} />
 					<Route path="/advertising" component={Advertising} />
 					<Route path="/vacancies" exact component={Vacancy} />
 					<Route path="/about" exact component={About} />
 					<Route path="/addcv" exact component={AddCV} />
-					<Route path="/vacancies/:vacancy-detail" component={VacancyDetail}/>
+					<Route path="/vacancies/:vacancy-detail" component={VacancyDetail} />
 					<Route path="/rules" component={Rules} />
-					<Route path="*" component={Eror404} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/blog" component={Blog} />
+					<Route path="*" component={Eror404} />
+
 				</Switch>
 			</Router>
 

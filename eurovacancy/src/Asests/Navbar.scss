@@ -36,7 +36,8 @@ body{
 		.logoImgBox{
 			padding: 0;
 			height: 120px;
-			img{
+
+			.brand-logo{
 				max-width: 150px;
 			}
 		}
@@ -182,5 +183,12 @@ body{
 @media (max-width:1000px){
 	.euro-navbar{
 		display: none;
+
+		
+
+		
+		
+		
+		
 	}
 }

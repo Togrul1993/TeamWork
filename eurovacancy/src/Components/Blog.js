@@ -3,6 +3,8 @@ import '../Asests/blog.css'
 import Header from './Header'
 import Footer from './Footer'
 import img from '../Image/blog.jpg'
+import NavbarMobil from './NavbarMobil'
+import Navbar from './Navbar'
 
 
 
@@ -10,7 +12,9 @@ import img from '../Image/blog.jpg'
 export default class blog extends Component {
     render() {
         return (
-            <div>
+            <>
+                <NavbarMobil />
+                <Navbar />
                 <Header />
                 <div className="columns w-row">
                     <div className="w-col w-col-9">
@@ -82,27 +86,27 @@ export default class blog extends Component {
                             <h4 className="heading-3">Axtarış</h4>
                             <form id="form">
                                 <input type="search" id="query" name="q" placeholder="Axtar..." />
-                                    {/* <button className="btn btn-dark">Search</button> */}
-                                    <i className="fa fa-search"></i>
+                                {/* <button className="btn btn-dark">Search</button> */}
+                                <i className="fa fa-search"></i>
                             </form>
                         </div>
 
-                            <div className="left-category">
-                                <h4 className="heading-4">Kateqoriya üzrə işlər<br /></h4>
-                            </div>
-                            <ul role="list" className="list">
-                                <li className="list-item">Graphic Designer (214)</li>
-                                <li className="list-item-2">Engineering Jobs (514)</li>
-                                <li className="list-item-3">Mainframe Jobs (554)</li>
-                                <li className="list-item-3">Mainframe Jobs (554)</li>
-                                <li className="list-item-3">Mainframe Jobs (554)</li>
-                                <li className="list-item-3">Mainframe Jobs (554)</li>
-                                <li className="list-item-3">Mainframe Jobs (554)</li>
-                            </ul>
+                        <div className="left-category">
+                            <h4 className="heading-4">Kateqoriya üzrə işlər<br /></h4>
                         </div>
+                        <ul role="list" className="list">
+                            <li className="list-item">Graphic Designer (214)</li>
+                            <li className="list-item-2">Engineering Jobs (514)</li>
+                            <li className="list-item-3">Mainframe Jobs (554)</li>
+                            <li className="list-item-3">Mainframe Jobs (554)</li>
+                            <li className="list-item-3">Mainframe Jobs (554)</li>
+                            <li className="list-item-3">Mainframe Jobs (554)</li>
+                            <li className="list-item-3">Mainframe Jobs (554)</li>
+                        </ul>
                     </div>
-                    <Footer />
                 </div>
+                <Footer />
+            </>
 
         )
     }

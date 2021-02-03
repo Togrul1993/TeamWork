@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
+import Footer from './Footer'
+import Header from './Header'
+import Navbar from './Navbar'
+import NavbarMobil from './NavbarMobil'
 
 export default class AddCv extends Component {
     render() {
         return (
-            <div className="add-cv">
-                <div className="container">
+            <>
+                <NavbarMobil />
+                <Navbar />
+                <Header />
+                <div className="add-cv">
+                    <div className="container">
                         <div className="form-header">
                             <h3>Job Details</h3>
                         </div>
@@ -67,8 +75,10 @@ export default class AddCv extends Component {
                             </div>
                         </div>
                         <button className="btn-post">Post a Job</button>
+                    </div>
                 </div>
-            </div>
+                <Footer />
+            </>
         )
     }
 }

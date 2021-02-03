@@ -20,7 +20,7 @@ const Navbar = () => {
 			<div className="container-fluid p-0 m-0 euro-navbar">
 				<div className="row p-0 m-0">
 					<div className="col-lg-4 col-md-12 d-md-flex justify-content-lg-start justify-content-md-center logoImgBox">
-						<img src={logo} alt="Logo" />
+						<img className="brand-logo" src={logo} alt="Logo" />
 					</div>
 
 					<NavbarMenu />
@@ -38,7 +38,7 @@ const Navbar = () => {
 							</ul>
 						</div>
 
-						<button className="addcv"><i class="fa fa-plus" aria-hidden="true"></i>CV</button>
+						<Link to="/addcv" className="addcv"><i class="fa fa-plus" aria-hidden="true"></i>CV</Link>
 
 
 					</div>
