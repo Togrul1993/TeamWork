@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Asests/vacancy-detail.css';
 
 
 class VacancyDetail extends Component {

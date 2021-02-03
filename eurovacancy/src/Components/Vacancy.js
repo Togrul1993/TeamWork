@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Consumer from '../context';
 import Jobs from './Jobs';
-import { BrowserRouter as Router } from 'react-router-dom';
+import '../Asests/vacancy.css'
+import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 
 class Vacancy extends Component {
     render() {
@@ -16,7 +17,7 @@ class Vacancy extends Component {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="sort my-2">
-                                                <select className="form-control">
+                                                <select className="form-select">
                                                     <option value="new">Newest</option>
                                                     <option value="old">Oldest</option>
                                                 </select>
@@ -182,7 +183,6 @@ class Vacancy extends Component {
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

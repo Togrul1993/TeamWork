@@ -9,6 +9,9 @@ import Header from './Components/Header';
 import Blog from './Components/Blog';
 import Contact from './Components/Contact';
 import Vacancy from './Components/Vacancy';
+import VacancyDetail from './Components/VacancyDetail';
+import About from './Components/About';
+import AddCV from './Components/AddCv';
 
 const App = () => {
 	return (
@@ -18,7 +21,10 @@ const App = () => {
 					<Route path="/" exact component={Home} />
 					<Route path="#header" component={Header} />
 					<Route path="/advertising" component={Advertising} />
-					<Route path="/vacancies" component={Vacancy} />
+					<Route path="/vacancies" exact component={Vacancy} />
+					<Route path="/about" exact component={About} />
+					<Route path="/addcv" exact component={AddCV} />
+					<Route path="vacancies/:vacancy-detail" component={VacancyDetail}/>
 					<Route path="/rules" component={Rules} />
 					<Route path="*" component={Eror404} />
 					<Route path="/contact" component={Contact} />

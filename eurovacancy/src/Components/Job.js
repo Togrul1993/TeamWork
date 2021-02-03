@@ -22,7 +22,7 @@ class Job extends Component {
                             </div>
                             <div className="job-overview">
                                 <div className="job-title">
-                                    <h6>{name}({experience} years experience)</h6>
+                                    <h4>{name}({experience} years experience)</h4>
                                 </div>
                                 <div className="job-salary">
                                     <i className="fas fa-money-bill-wave"></i>
@@ -42,7 +42,7 @@ class Job extends Component {
                                 {type}
                             </div>
                             <div className="view-more">
-                                <Link to="/vacancy-detail" >View More</Link>
+                                <Link to="/vacancies/vacancy-detail" >View More</Link>
                             </div>
                         </div>
                     </div>
