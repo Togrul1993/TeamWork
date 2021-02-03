@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Asests/css/blog.css'
+import '../Asests/blog.css'
 import Header from './Header'
 import Footer from './Footer'
 import img from '../Image/blog.jpg'
