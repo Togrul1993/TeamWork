@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import "../Asests/css/contact.css"
+import "../Asests/contact.css"
 
 
 
