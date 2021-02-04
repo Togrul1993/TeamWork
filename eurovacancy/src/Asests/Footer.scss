@@ -246,10 +246,14 @@ $second-color_:rgba(35,192,233,1);
 				height: 40px;
 				width: 40px;
 				padding: 5px;
-				border: 1px solid black;
-				border-radius: 50%;
-				color: black;
+				border: 2px solid $second-color_;
+				border-radius: 10px;
+				color: white;
 				text-decoration: none;
+
+				&:hover{
+					background-color: $second-color_;
+				}
 			}
 		}
 
@@ -268,12 +272,16 @@ $second-color_:rgba(35,192,233,1);
 				padding: 5px;
 				height: 40px;
 				width: 40px;
-				border-radius: 50%;
+				border-radius: 10px;
 				border: none;
 				text-align: center;
 				align-items: center;
-				background-color: $second-color_;
+				border: 2px solid $second-color_;
 				color: $txt-color;
+
+				&:hover{
+					background-color: $second-color_;
+				}
 			}
 		}
 	}
@@ -303,8 +311,8 @@ $second-color_:rgba(35,192,233,1);
 					padding: 3px;
 					height: 35px;
 					width: 35px;
-					border-radius: 50%;
-					border: none;
+					border-radius: 10px;
+					border:2px solid $second-color_;
 					line-height: 25px;
 					font-size: 16px;
 				}

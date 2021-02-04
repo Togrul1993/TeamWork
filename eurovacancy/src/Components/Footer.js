@@ -50,7 +50,7 @@ const Footer = () => {
 
 				<div className="row euro-footer-share">
 					<div className="col-lg-4 col-md-6 col-6 euro-footer-share-copy-right">
-						<p>All copy right</p>
+						<p>All Rights Reserved.</p>
 					</div>
 
 					<div className="col-lg-4 euro-footer-angle-up">

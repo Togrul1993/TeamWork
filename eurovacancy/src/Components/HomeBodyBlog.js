@@ -33,10 +33,18 @@ const HomeBodyBlog = () => {
 				<Row>
 					{
 						blogitems.map(job => (
-							<Col lg={4} className="d-flex flex-column mb-3">
+							<Col lg={4} className="d-flex flex-column mb-5 p-1">
 								<Image src={job.img} />
-								<h3>{job.title}</h3>
-								<p>{job.txt}</p>
+								<h3 className="p-2">{job.title}</h3>
+								<p className="p-2">{job.txt}</p>
+								<div className="d-flex flex-row flex-nowrap justify-content-between mt-2 mb-2 p-2">
+									<Link to="/" className="reade-more  text-decoration-none">Etrafli</Link>
+
+									<div className="d-flex flex-row flex-nowrap justify-content-between w-25 p-3">
+										<Link to="/" className="fa fa-facebook text-decoration-none" aria-hidden="true"></Link>
+										<Link to="/" className="fa fa-whatsapp  text-decoration-none " aria-hidden="true"></Link>
+									</div>
+								</div>
 							</Col>
 						))
 					}
