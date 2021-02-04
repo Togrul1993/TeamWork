@@ -1,0 +1,49 @@
+.euro-counters{
+	
+	margin-top: 20px;
+	
+
+
+	.row{
+
+
+		.counters-items{
+			position: relative;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			margin-bottom: 10px;
+			height: 150px;
+			padding: 20px;
+			background-color: aqua;
+			text-align: center;
+
+			&:nth-child(2){
+				background-color: blue;
+				color: white;
+			}
+
+			&:nth-child(4){
+				background-color: blue;
+				color: white;
+			}
+
+			.countup{
+				font-size: 20px;
+				margin-right: 10px;
+				font-weight: 900;
+			}
+
+			.fa-plus{
+				position: relative;
+				align-self: center;
+				font-size: 16px;
+			}
+		}
+
+		.count-text{
+			font-size: 18px;
+			margin-top: 15px;
+		}
+	}
+}
