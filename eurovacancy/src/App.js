@@ -19,15 +19,14 @@ const App = () => {
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/advertising" component={Advertising} />
-					<Route path="/vacancies" exact component={Vacancy} />
-					<Route path="/about" exact component={About} />
-					<Route path="/addcv" exact component={AddCV} />
-					<Route path="/vacancies/:vacancy-detail" component={VacancyDetail} />
+					<Route path="/vacancies" component={Vacancy} />
+					<Route path="/about" component={About} />
+					<Route path="/addcv" component={AddCV} />
+					<Route path="/vacancy-detail" component={VacancyDetail} />
 					<Route path="/rules" component={Rules} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/blog" component={Blog} />
 					<Route path="*" component={Eror404} />
-
 				</Switch>
 			</Router>
 

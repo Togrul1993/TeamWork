@@ -12,7 +12,7 @@ export class ContextProvider extends Component {
                 location: "1st street",
                 type: "contract",
                 salary: "1200",
-                experience: 1 - 3,
+                experience: "1 - 3",
                 image: "..\\images\\job_post_img1.jpg"
             },
             {
@@ -21,7 +21,7 @@ export class ContextProvider extends Component {
                 location: "2nd street",
                 type: "type",
                 salary: "2000",
-                experience: 3 - 5,
+                experience: "3 - 5",
                 image: "..\\images\\job_post_img2.jpg"
             },
             {
@@ -30,7 +30,7 @@ export class ContextProvider extends Component {
                 location: "3rd street",
                 salary: "1000",
                 type: "Remote",
-                experience: 1 - 3,
+                experience: "1 - 3",
                 image: "..\\images\\job_post_img3.jpg"
             },
             {
@@ -48,7 +48,7 @@ export class ContextProvider extends Component {
                 location: "5th street",
                 salary: "2000",
                 type: "Part time",
-                experience: 2 - 3,
+                experience: "2 - 3",
                 image: "..\\images\\job_post_img4.jpg"
             },
             {
@@ -131,32 +131,6 @@ export class ContextProvider extends Component {
             {
                 id: 4,
                 name: "Management"
-            }
-        ],
-        blogs: [
-            {
-                id: 1,
-                title: "Hey Seeker, It’s Time",
-                description: "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
-                date: "01 Feb,2021",
-                image: "..\\images\\car_img1.jpg",
-                commentator: "John Doe"
-            },
-            {
-                id: 2,
-                title: "Hey Seeker, It’s Time",
-                description: "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
-                date: "02 Feb,2021",
-                image: "..\\images\\car_img2.jpg",
-                commentator: "John Doe"
-            },
-            {
-                id: 3,
-                title: "Hey Seeker, It’s Time",
-                description: "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.",
-                date: "03 Feb,2021",
-                image: "..\\images\\car_img3.jpg",
-                commentator: "John Doe"
             }
         ]
     }

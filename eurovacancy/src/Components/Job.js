@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class Job extends Component {
     render() {
@@ -37,7 +37,7 @@ class Job extends Component {
                                 {type}
                             </div>
                             <div className="view-more">
-                                <Link to="/vacancies/vacancy-detail" >View More</Link>
+                                <a href="/vacancy-detail" >View More</a>
                             </div>
                         </div>
                     </div>

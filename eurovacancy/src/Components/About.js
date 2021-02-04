@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Consumer from '../context';
 import Footer from './Footer';
 import Header from './Header';
 import Navbar from './Navbar';
@@ -14,7 +13,7 @@ export default class About extends Component {
                 <Header />
                 <div className="wrapper">
                     <div className="container">
-                        <div className="how">
+                        <div className="row">
                             <div className="col-lg-6">
                                 <div className="left-side">
                                     <div className="description">
@@ -63,105 +62,105 @@ export default class About extends Component {
                             <div className="description">
                                 <h2>carrier advice</h2>
                             </div>
-                            <div className="blog-list owl-carousel">
-
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="single-blog">
-                                        <div className="blog-image">
-                                            <img src="..\images\car_img1.jpg" alt="blog" />
-                                        </div>
-                                        <div className="blog-body">
-                                            <div className="blog-date">
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Feb, 2021</span>
+                            <div className="blog-list">
+                                <div className="row">
+                                    <div className="col-lg-4 col-md-6 my-5">
+                                        <div className="single-blog">
+                                            <div className="blog-image">
+                                                <img src="..\images\car_img1.jpg" alt="blog" />
                                             </div>
-                                            <div className="blog-title">
-                                                <h3 >Hey Seeker, It’s Time</h3>
-                                            </div>
-                                            <div className="blog-description">
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
-                                            </div>
-                                        </div>
-                                        <div className="blog-footer">
-                                            <div className="blog-comment">
-                                                <div className="commentator">
-                                                    <div className="comment-image">
-                                                        <img src="..\images\blog_small_img.jpg" alt="" />
-                                                    </div>
-                                                    <span>John Doe</span>
+                                            <div className="blog-body">
+                                                <div className="blog-date">
+                                                    <i className="fas fa-calendar-alt"></i>
+                                                    <span>01 Feb, 2021</span>
                                                 </div>
-                                                <div className="comment-icon">
-                                                    <i className="fas fa-comments"></i>
+                                                <div className="blog-title">
+                                                    <h3 >Hey Seeker, It’s Time</h3>
+                                                </div>
+                                                <div className="blog-description">
+                                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+                                                </div>
+                                            </div>
+                                            <div className="blog-footer">
+                                                <div className="blog-comment">
+                                                    <div className="commentator">
+                                                        <div className="comment-image">
+                                                            <img src="..\images\blog_small_img.jpg" alt="" />
+                                                        </div>
+                                                        <span>John Doe</span>
+                                                    </div>
+                                                    <div className="comment-icon">
+                                                        <i className="fas fa-comments"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 col-md-6 my-5">
+                                        <div className="single-blog">
+                                            <div className="blog-image">
+                                                <img src="..\images\car_img2.jpg" alt="blog" />
+                                            </div>
+                                            <div className="blog-body">
+                                                <div className="blog-date">
+                                                    <i className="fas fa-calendar-alt"></i>
+                                                    <span>02 Feb, 2021</span>
+                                                </div>
+                                                <div className="blog-title">
+                                                    <h3 >Hey Seeker, It’s Time</h3>
+                                                </div>
+                                                <div className="blog-description">
+                                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+                                                </div>
+                                            </div>
+                                            <div className="blog-footer">
+                                                <div className="blog-comment">
+                                                    <div className="commentator">
+                                                        <div className="comment-image">
+                                                            <img src="..\images\blog_small_img.jpg" alt="" />
+                                                        </div>
+                                                        <span>John Doe</span>
+                                                    </div>
+                                                    <div className="comment-icon">
+                                                        <i className="fas fa-comments"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 col-md-6 my-5">
+                                        <div className="single-blog">
+                                            <div className="blog-image">
+                                                <img src="..\images\car_img3.jpg" alt="blog" />
+                                            </div>
+                                            <div className="blog-body">
+                                                <div className="blog-date">
+                                                    <i className="fas fa-calendar-alt"></i>
+                                                    <span>03 Feb, 2021</span>
+                                                </div>
+                                                <div className="blog-title">
+                                                    <h3 >Hey Seeker, It’s Time</h3>
+                                                </div>
+                                                <div className="blog-description">
+                                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
+                                                </div>
+                                            </div>
+                                            <div className="blog-footer">
+                                                <div className="blog-comment">
+                                                    <div className="commentator">
+                                                        <div className="comment-image">
+                                                            <img src="..\images\blog_small_img.jpg" alt="" />
+                                                        </div>
+                                                        <span>John Doe</span>
+                                                    </div>
+                                                    <div className="comment-icon">
+                                                        <i className="fas fa-comments"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="single-blog">
-                                        <div className="blog-image">
-                                            <img src="..\images\car_img2.jpg" alt="blog" />
-                                        </div>
-                                        <div className="blog-body">
-                                            <div className="blog-date">
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>02 Feb, 2021</span>
-                                            </div>
-                                            <div className="blog-title">
-                                                <h3 >Hey Seeker, It’s Time</h3>
-                                            </div>
-                                            <div className="blog-description">
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
-                                            </div>
-                                        </div>
-                                        <div className="blog-footer">
-                                            <div className="blog-comment">
-                                                <div className="commentator">
-                                                    <div className="comment-image">
-                                                        <img src="..\images\blog_small_img.jpg" alt="" />
-                                                    </div>
-                                                    <span>John Doe</span>
-                                                </div>
-                                                <div className="comment-icon">
-                                                    <i className="fas fa-comments"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="single-blog">
-                                        <div className="blog-image">
-                                            <img src="..\images\car_img3.jpg" alt="blog" />
-                                        </div>
-                                        <div className="blog-body">
-                                            <div className="blog-date">
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>03 Feb, 2021</span>
-                                            </div>
-                                            <div className="blog-title">
-                                                <h3 >Hey Seeker, It’s Time</h3>
-                                            </div>
-                                            <div className="blog-description">
-                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</p>
-                                            </div>
-                                        </div>
-                                        <div className="blog-footer">
-                                            <div className="blog-comment">
-                                                <div className="commentator">
-                                                    <div className="comment-image">
-                                                        <img src="..\images\blog_small_img.jpg" alt="" />
-                                                    </div>
-                                                    <span>John Doe</span>
-                                                </div>
-                                                <div className="comment-icon">
-                                                    <i className="fas fa-comments"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>

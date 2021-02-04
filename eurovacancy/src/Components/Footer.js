@@ -27,7 +27,7 @@ const Footer = () => {
 
 					<div className="col-lg-4 col-md-4 col-sm-6 col-12 euro-footer-menu">
 						<h3 className="euro-footer-menu-title">Menu</h3>
-						<NavLink to="/" exact="true" className="euro-footer-menu-link" activeClassName="footer-active-link">AnaSeyfe</NavLink>
+						<NavLink to="/" exact className="euro-footer-menu-link" activeClassName="footer-active-link">AnaSeyfe</NavLink>
 						<NavLink to="/vacancies" className="euro-footer-menu-link" activeClassName="footer-active-link">Vakansiyalar</NavLink>
 						<NavLink to="/blog" className="euro-footer-menu-link" activeClassName="footer-active-link">Blog</NavLink>
 						<NavLink to="/advertising" className="euro-footer-menu-link" activeClassName="footer-active-link">Reklam</NavLink>
