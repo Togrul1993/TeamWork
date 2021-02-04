@@ -2,15 +2,9 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'
 import { newcontext } from '../context';
 
-
-
-
-const HomeBodyVacancy = () => {
-
+const Frilans = () => {
 	const context = useContext(newcontext);
 	const jobs = (context.jobs.sort((a, b) => { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 }).splice(0, 10))
-
-
 	return (
 		<>
 			<div className="container">
@@ -52,7 +46,6 @@ const HomeBodyVacancy = () => {
 									</div>
 								</div>
 							</div>
-
 						))
 					}
 				</div>
@@ -64,4 +57,4 @@ const HomeBodyVacancy = () => {
 	)
 }
 
-export default HomeBodyVacancy
+export default Frilans

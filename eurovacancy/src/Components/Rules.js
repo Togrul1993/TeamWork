@@ -6,6 +6,8 @@ import Navbar from './Navbar'
 import NavbarMobil from './NavbarMobil'
 
 const Rules = () => {
+
+
 	const [rules] = useState([
 		{
 			number: 1,
@@ -48,6 +50,7 @@ const Rules = () => {
 			text: "Viza və sənədləşmə xərcləri və eyni zamanda işçi ilə əmək müqaviləsi bağlanmış şirkətin olduğu ölkəyə gediş ( uçuş ) xərcləri işçi tərəfindən qarşılanır."
 		}
 	])
+
 	return (
 		<>
 			<NavbarMobil />

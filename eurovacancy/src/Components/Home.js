@@ -18,7 +18,6 @@ const Home = () => {
 			<HomeBodyVacancy />
 			<Counters />
 			<HomeBodyBlog />
-
 			<Footer />
 		</>
 	)

@@ -64,12 +64,12 @@ const HomeBodyBlog = () => {
 						blogs.map((blog, id) => (
 							<Col lg={3} key={id} className="d-flex flex-column mb-3 m-1 p-0 border border-dark home-bodyblog-col">
 								<Image src={blog.img} />
-								<h3 className="p-1">{blog.title}</h3>
+								<h3 className="p-1">{overviewTrim(blog.title, 13)}</h3>
 								<p className="p-1">{overviewTrim(blog.txt, 80)}</p>
 								<hr className="border-dark p-0" />
 								<div className="d-flex flex-row flex-nowrap justify-content-between mt-1 mb-1 p-1 home-bodyblog-shares">
 
-									<Link to="/" className="reade-more  text-decoration-none home-bodyblog-btn">Etrafli</Link>
+									<Link to="/blog" className="reade-more  text-decoration-none home-bodyblog-btn">Etrafli</Link>
 
 									<div className="d-flex flex-row flex-nowrap justify-content-between w-25 p-1 home-bodyblog-share">
 										<Link to="/" className="fa fa-facebook text-decoration-none" aria-hidden="true"></Link>

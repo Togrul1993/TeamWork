@@ -67,8 +67,8 @@ const NavbarMobilMenu = ({ bars, barsClick }) => {
 				</div>
 
 				{
-					navLink.map((navlink,id) => (
-						<NavLink key={id} to={navlink.to} className="mobil-menu-link" activeClassName="mobil-menu-link-active">{navlink.title}</NavLink>
+					navLink.map((navlink, id) => (
+						<NavLink exact={navLink.exact} key={id} to={navlink.to} className="mobil-menu-link" activeClassName="mobil-menu-link-active">{navlink.title}</NavLink>
 					))
 				}
 

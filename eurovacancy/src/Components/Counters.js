@@ -39,14 +39,16 @@ const Counters = () => {
 			text: "Company"
 		}
 	])
+
+
 	return (
 		<>
 			<div className="euro-counters">
 				<div className="container pt-0 pb-0 ">
 					<div className="row">
 						{
-							count.map(count => (
-								<div className="col-lg-3 counters-items">
+							count.map((count, i) => (
+								<div className="col-lg-3 counters-items" key={i}>
 									<div className={count.euro_counters_item}>
 										<CountUp end={count.end} className={count.countup} />
 										<i className={count.fa_plus} aria-hidden="true"></i>
