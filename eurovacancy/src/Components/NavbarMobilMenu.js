@@ -20,7 +20,7 @@ const NavbarMobilMenu = ({ bars, barsClick }) => {
 			{
 				exact: false,
 				title: "Vakansiyalar",
-				to: "/vacancy"
+				to: "/vacancies"
 			},
 			{
 				exact: false,
@@ -45,7 +45,7 @@ const NavbarMobilMenu = ({ bars, barsClick }) => {
 			{
 				exact: false,
 				title: "CV Yerlesdir",
-				to: "/addCv"
+				to: "/addcv"
 			}
 
 		]

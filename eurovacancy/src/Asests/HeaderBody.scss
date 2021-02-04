@@ -142,17 +142,17 @@ $font-color: #9b9b9b;
 		padding: 20px 40px;
 		
 		.header-body-title{
-			font-size: 45px;
+			font-size: 35px;
 		}
 
 		.euro-header-body-form{
 			position: relative;
 			width: 100%;
-			flex-flow: column nowrap;
 			display: flex;
+			flex-flow: column nowrap;
 			
 			justify-content: center;
-			align-items: center;
+			
 
 			.euro-header-body-search{
 				width: 100%;
@@ -194,7 +194,8 @@ $font-color: #9b9b9b;
 		padding: 20px;
 
 		.header-body-title{
-			font-size: 30px;
+			margin-bottom: 15px;
+			background-color: #f36969;
 		}
 	}
 }

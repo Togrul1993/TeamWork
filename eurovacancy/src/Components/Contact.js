@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import "../Asests/contact.css"
-import { Navbar } from 'react-bootstrap';
-import NavbarMenu from './NavbarMenu';
-
+import Navbar from './Navbar'
+import NavbarMobil from './NavbarMobil'
 
 
 
@@ -21,7 +20,7 @@ export default class Contact extends Component {
   render() {
     return (
       <>
-        <NavbarMenu />
+        <NavbarMobil />
         <Navbar />
         <Header />
 
