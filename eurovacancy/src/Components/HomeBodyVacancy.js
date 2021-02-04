@@ -6,8 +6,9 @@ import { newcontext } from '../context';
 
 
 const HomeBodyVacancy = () => {
+
 	const context = useContext(newcontext);
-	const jobs = (context.jobs)
+	const jobs = (context.jobs.splice(0, 10))
 
 	return (
 		<>
