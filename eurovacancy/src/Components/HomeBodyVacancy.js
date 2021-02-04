@@ -8,7 +8,8 @@ import { newcontext } from '../context';
 const HomeBodyVacancy = () => {
 
 	const context = useContext(newcontext);
-	const jobs = (context.jobs.splice(0, 10))
+	const jobs = (context.jobs.sort((a, b) => { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 }).splice(0, 10))
+
 
 	return (
 		<>

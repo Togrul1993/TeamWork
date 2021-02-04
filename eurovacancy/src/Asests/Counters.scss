@@ -1,19 +1,23 @@
 .euro-counters{
-	
+	background-color: rgba(35,192,233,0.3);
 	margin-top: 20px;
-	
+	height: auto;
+	padding-top: 70px;
+	padding-bottom:70px;
 
+	.container{
+		padding: 0;
 
 	.row{
-
+		padding: 0;
 
 		.counters-items{
 			position: relative;
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: center;
-			margin-bottom: 10px;
-			height: 150px;
+			
+			height: 160px;
 			padding: 20px;
 			background-color: aqua;
 			text-align: center;
@@ -45,5 +49,6 @@
 			font-size: 18px;
 			margin-top: 15px;
 		}
+	}
 	}
 }

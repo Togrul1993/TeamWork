@@ -1,0 +1,88 @@
+$txt-color: #fff;
+$a-before-after:#337ab7;
+$navbar-btn-color:#f36969;
+$navbar-btn-color-1:rgba(243,105,105,1);
+$bg-color:hsla(200,40%,30%,0.4);
+$main-color: #353b4a;
+$second-color: #23c0e9;
+$second-color_:rgba(35,192,233,1);
+$font-color: #9b9b9b;
+
+
+.home-bodyblog-container{
+
+
+	.home-bodyblog-row{
+
+
+		.home-bodyblog-col{
+			background-color: rgba(35,192,233,0.2);
+			
+
+			h3{
+				width: 100%;
+				padding-left: 10px;
+			}
+
+			p{
+				padding-left: 10px;
+				width: 80%;
+				
+			}
+			.home-bodyblog-shares{
+				padding: 0px 20px;
+
+				.home-bodyblog-btn{
+					width: 100px;
+					padding: 5px;
+					text-align: center;
+					border: 1px solid #23c0e9;
+					color: black;
+					border-radius: 5px;
+
+
+					&:hover{
+						background-color: #23c0e9;
+						color: white;
+					}
+					
+				}
+
+				.home-bodyblog-share{
+
+
+					.fa-facebook{
+						width: 30px;
+						height: 25px;
+						padding: 5px;
+						border-radius: 5px;
+						border: 1px solid #23c0e9;
+						text-align: center;
+						color: black;
+
+						&:hover{
+							background-color: #23c0e9;
+							color: white;
+						}
+					}
+
+					.fa-whatsapp{
+						margin-left: 5px;
+						width: 30px;
+						height: 25px;
+						padding: 5px;
+						border-radius: 5px;
+						border: 1px solid #23c0e9;
+						text-align: center;
+						color: black;
+
+						&:hover{
+							background-color: #23c0e9;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+}

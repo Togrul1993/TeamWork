@@ -41,29 +41,37 @@ const HomeBodyBlog = () => {
 
 	])
 
+	const blogs = blogitems.sort((a, b) => { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 }).splice(0, 3)
 
 
 
-	const blogs = blogitems.splice(0, 3)
+	const overviewTrim = (string, maxstring) => {
+		if (!string) return null;
+		if (string.length <= maxstring) return string;
+		return `${string.substring(0, maxstring)} ...`
+	}
 
 	return (
 		<>
-			<Container>
+			<Container className="home-bodyblog-container">
 
 				<h3>Blog</h3>
 				<hr className="border-dark" />
 
-				<Row id="blog" >
+				<Row id="blog" className="d-flex justify-content-center home-bodyblog-row">
 
 					{
 						blogs.map((blog, id) => (
-							<Col lg={4} key={id} className="d-flex flex-column mb-3">
+							<Col lg={3} key={id} className="d-flex flex-column mb-3 m-1 p-0 border border-dark home-bodyblog-col">
 								<Image src={blog.img} />
-								<h3 className="p-2">{blog.title}</h3>
-								<p className="p-2">{blog.txt}</p>
-								<div className="d-flex flex-row flex-nowrap justify-content-between mt-2 mb-2 p-2">
-									<Link to="/" className="reade-more  text-decoration-none">Etrafli</Link>
-									<div className="d-flex flex-row flex-nowrap justify-content-between w-25 p-3">
+								<h3 className="p-1">{blog.title}</h3>
+								<p className="p-1">{overviewTrim(blog.txt, 80)}</p>
+								<hr className="border-dark p-0" />
+								<div className="d-flex flex-row flex-nowrap justify-content-between mt-1 mb-1 p-1 home-bodyblog-shares">
+
+									<Link to="/" className="reade-more  text-decoration-none home-bodyblog-btn">Etrafli</Link>
+
+									<div className="d-flex flex-row flex-nowrap justify-content-between w-25 p-1 home-bodyblog-share">
 										<Link to="/" className="fa fa-facebook text-decoration-none" aria-hidden="true"></Link>
 										<Link to="/" className="fa fa-whatsapp  text-decoration-none " aria-hidden="true"></Link>
 									</div>
