@@ -14,6 +14,7 @@ import './Asests/NavbarMobilMenu.scss';
 import './Asests/HeaderFooter.scss';
 import './Asests/Rules.scss'
 import './Asests/HeaderBody.scss';
+import './Asests/Counters.scss';
 import './Asests/vacancy.css';
 import './Asests/vacancy-detail.css';
 import './Asests/about.css';
