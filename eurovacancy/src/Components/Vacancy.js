@@ -54,7 +54,7 @@ class Vacancy extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-12">
+                            <div className="col-lg-3 col-md-12" style={{'padding':0}}>
                                 <div className="search-by">
                                     <div className="by-category my-3">
                                         <div className="search-header">

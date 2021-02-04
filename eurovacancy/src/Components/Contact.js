@@ -67,8 +67,8 @@ export default class Contact extends Component {
             </div>
 
             <div className="contact-form">
-              {/* <span class="circle one"></span>
-          <span class="circle two"></span> */}
+              {/* <span className="circle one"></span>
+          <span className="circle two"></span> */}
 
               <form action="" autocomplete="off">
                 <h3 className="title">Əlaqə</h3>
@@ -77,17 +77,17 @@ export default class Contact extends Component {
                   <label for="" />
 
                 </div>
-                <div class="input-container">
+                <div className="input-container">
                   <input type="email" placeholder="Email" name="email" required className="input" />
                   <label for="" />
 
                 </div>
-                <div class="input-container">
+                <div className="input-container">
                   <input type="text" placeholder="Mövzu" name="movzu" className="input" />
                   <label for="" />
 
                 </div>
-                <div class="input-container textarea">
+                <div className="input-container textarea">
                   <textarea name="message" placeholder="Mesaj" required className="input"></textarea>
                   <label for="" />
 

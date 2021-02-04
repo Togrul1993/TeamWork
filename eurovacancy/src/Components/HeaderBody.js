@@ -32,12 +32,12 @@ const HeaderBody = () => {
 						<option>React js</option>
 					</select>
 
-					<button className="euro-header-body-submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+					<button className="euro-header-body-submit" type="submit"><i className="fa fa-search" aria-hidden="true"></i> Search</button>
 				</form>
 
 
 				<div className="header-body-keys">
-					<i class="fa fa-key" aria-hidden="true"></i>
+					<i className="fa fa-key" aria-hidden="true"></i>
 					<h6>Trending Keywords  :</h6>
 					<Link to="/" className="header-body-link-job">ui designer,</Link>
 					<Link to="/" className="header-body-link-job">developer,</Link>

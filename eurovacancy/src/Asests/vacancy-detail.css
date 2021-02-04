@@ -179,11 +179,11 @@
 }
 .job-images .selected-image{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 200px;
-    margin: 20px auto;
+    margin-top: 20px;
     border: 1px;
-    border: 1px solid #4144;
+    border: 1px solid #00000042;
     background-color: black;
 }
 .job-images .selected-image img{
@@ -218,9 +218,11 @@
 .single-image{
     position: relative;
     width: 22%;
+    height: 75px;
 }
 .single-image img{
     width: 100%;
+    height: 100%;
 }
 .image-list .single-image::after{
     content: "";
@@ -237,11 +239,18 @@
     width: 100%;
 }
 .image-list .single-image{
-    margin: 0 20px;
+    margin-right: 20px;
 }
 .modal input{
     width: 85%;
 }
 textarea{
     width: 91%;
+}
+
+@media screen and (max-width:768px){
+    .single-image{
+        width: 150px;
+        height: 45px;
+    }
 }

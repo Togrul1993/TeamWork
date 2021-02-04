@@ -32,13 +32,13 @@ const Navbar = () => {
 							<i className="fa fa-language" id="euro-btn" aria-hidden="true" onClick={menuToggle}></i>
 
 							<ul className={button ? "euro-dropdown-menu activMenu" : "euro-dropdown-menu"}>
-								<li className="items"><Link class="euro-dropdown-item" to="/">Aze</Link></li>
-								<li className="items"><Link class="euro-dropdown-item" to="/">Rus</Link></li>
-								<li className="items"><Link class="euro-dropdown-item" to="/">Eng</Link></li>
+								<li className="items"><Link className="euro-dropdown-item" to="/">Aze</Link></li>
+								<li className="items"><Link className="euro-dropdown-item" to="/">Rus</Link></li>
+								<li className="items"><Link className="euro-dropdown-item" to="/">Eng</Link></li>
 							</ul>
 						</div>
 
-						<Link to="/addcv" className="addcv">CV</Link>
+						<a href="/addcv" className="addcv">CV</a>
 
 
 					</div>

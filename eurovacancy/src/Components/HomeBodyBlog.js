@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Image, Col, Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import img from '../Image/blog.jpg'
 
 
@@ -32,8 +31,13 @@ const HomeBodyBlog = () => {
 				<hr className="border-dark" />
 				<Row>
 					{
+<<<<<<< HEAD
 						blogitems.map(job => (
 							<Col lg={4} className="d-flex flex-column mb-5 p-1">
+=======
+						blogitems.map((job,id) => (
+							<Col lg={4} key={id}className="d-flex flex-column mb-3">
+>>>>>>> f1f144f5cd54ed278ff31984f552dce069d9c8b3
 								<Image src={job.img} />
 								<h3 className="p-2">{job.title}</h3>
 								<p className="p-2">{job.txt}</p>

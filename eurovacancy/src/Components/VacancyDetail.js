@@ -20,6 +20,23 @@ class VacancyDetail extends Component {
             document.querySelector('.image-settings').style.display = 'none'
         }
         const scale = () => {
+            let selected = document.querySelector('.selected-image img');
+            let width = selected.parentElement.offsetWidth;
+            let height = selected.parentElement.offsetHeight;
+            if (width <= 500 && height <= 500) {
+                selected.parentElement.style.width = width * 1.01 + 'px';
+                selected.parentElement.style.height = height * 1.01 + 'px';
+            }
+        }
+        const noScale = () => {
+            let selected = document.querySelector('.selected-image img');
+            let width = selected.parentElement.offsetWidth;
+            let height = selected.parentElement.offsetHeight;
+            if (width > 400 && height > 200) {
+
+                selected.parentElement.style.width = width * 0.99 + 'px';
+                selected.parentElement.style.height = height * 0.99 + 'px';
+            }
         }
         return (
             <>
@@ -51,28 +68,28 @@ class VacancyDetail extends Component {
                                         <h2>job images</h2>
                                         <div className="job-images">
                                             <div className="selected-image" onMouseEnter={hover} onMouseLeave={nonHover}>
-                                                <img src="..\images\job_post_img1.jpg" alt="job-1" />
+                                                <img src="..\images\factory1.jpg" alt="job-1" />
                                                 <div className="image-settings">
                                                     <div className="scale" onClick={scale}>
                                                         <i className="fas fa-plus"></i>
                                                     </div>
                                                     <div className="non-scale">
-                                                        <i className="fas fa-minus"></i>
+                                                        <i className="fas fa-minus" onClick={noScale}></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="image-list">
                                                 <div className="single-image" onClick={click}>
-                                                    <img src="..\images\job_post_img1.jpg" alt="job-1" />
+                                                    <img src="..\images\factory1.jpg" alt="job-1" />
                                                 </div>
                                                 <div className="single-image" onClick={click}>
-                                                    <img src="..\images\job_post_img2.jpg" alt="job-2" />
+                                                    <img src="..\images\factory2.jpg" alt="job-2" />
                                                 </div>
                                                 <div className="single-image" onClick={click}>
-                                                    <img src="..\images\job_post_img3.jpg" alt="job-3" />
+                                                    <img src="..\images\factory3.jpg" alt="job-3" />
                                                 </div>
                                                 <div className="single-image" onClick={click}>
-                                                    <img src="..\images\job_post_img4.jpg" alt="job-4" />
+                                                    <img src="..\images\factory4.jpg" alt="job-4" />
                                                 </div>
                                             </div>
                                         </div>

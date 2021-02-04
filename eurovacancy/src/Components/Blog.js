@@ -31,7 +31,7 @@ export default class blog extends Component {
                                         enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                                         nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
                                 imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i class="fab fa-instagram icon"></i>
+                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
                                     </div>
                                 </div>
                                 <div><img
@@ -44,7 +44,7 @@ export default class blog extends Component {
                                         enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                                         nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
                                 imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i class="fab fa-instagram icon"></i>
+                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
                                     </div>
                                 </div>
                                 <div><img
@@ -57,7 +57,7 @@ export default class blog extends Component {
                                         enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                                         nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
                                 imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i class="fab fa-instagram icon"></i>
+                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
                                     </div>
                                 </div>
                                 <div><img
@@ -70,7 +70,7 @@ export default class blog extends Component {
                                         enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                                         nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
                                 imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i class="fab fa-instagram icon"></i>
+                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ export default class blog extends Component {
                         <div className="left-category">
                             <h4 className="heading-4">Kateqoriya üzrə işlər<br /></h4>
                         </div>
-                        <ul role="list" className="list">
+                        <ul className="list">
                             <li className="list-item">Graphic Designer (214)</li>
                             <li className="list-item-2">Engineering Jobs (514)</li>
                             <li className="list-item-3">Mainframe Jobs (554)</li>

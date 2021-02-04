@@ -50,7 +50,7 @@ const HeaderFooter = () => {
 				<div className="row d-flex justify-content-around w-75">
 					{
 						jobsplan.map((job, id) => (
-							<Link className="col-lg-2 col-md-4 col-sm-6 col-6 p-0 euro-header-footer-col" key={id}>
+							<Link to="/" className="col-lg-2 col-md-4 col-sm-6 col-6 p-0 euro-header-footer-col" key={id}>
 								<div className="euro-header-jobs">
 									<i className={job.icon}></i>
 									<h5>{job.title}</h5>
