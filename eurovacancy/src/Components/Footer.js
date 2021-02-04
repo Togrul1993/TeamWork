@@ -8,7 +8,6 @@ const Footer = () => {
 	return (
 		<>
 			<div className="container-fluid euro-footer">
-
 				<div className="euro-footer-logo">
 					<img src={logofooter} alt="Footer Logo" />
 				</div>
