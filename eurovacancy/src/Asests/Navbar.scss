@@ -23,7 +23,7 @@ body{
 	padding: 0;
 	border-top: none;
 	z-index: 95;
-	background-color: rgba(35,192,233,0.4);
+	background-color: rgba(35,192,233,0.5);
 
 	.row{
 		position: relative;
@@ -64,13 +64,13 @@ body{
 
 				
 
-				#euro-btn{
+				.fa-language{
 					position: relative;
 					display: flex;
 					align-self: center;
 					width: 40px;
 					padding: 7px;
-					font-size: 25px;
+					font-size: 20px;
 					color: black;
 					border: 2px solid gray;
 					border-radius: 5px;
@@ -96,11 +96,9 @@ body{
 
 				.euro-dropdown-menu{
 					position: absolute;
-					width: 100px;
+					width: 150px;
 					display: flex;
-					align-items: center;
 					flex-flow: column nowrap;
-					border-top: 2px solid #337ab7;
 					list-style: none;
 					top: 90px;
 					opacity: 0;
@@ -145,20 +143,19 @@ body{
 		}
 
 		.addcv{
-			display: flex;
+			text-align: center;
 			position: relative;
-			align-items: center;
+			text-decoration: none;
 			background-color: #f36969;
 			border: 1px solid #f36969;
 			border-radius: 5px;
 			height: 40px;
 			align-self: center;
-			width: 80px;
+			width: 60px;
 			padding:8px;
 			font-size: 20px;
-			font-weight: 400;
 			color: #fff;
-			margin-right: 15px;
+			margin-right: 25px;
 			transition: all 0.6s linear;
 
 
@@ -168,26 +165,14 @@ body{
 				color: black;
 			}
 
-			i{
-				position: relative;
-				font-size: 20px;
-				margin-right: 10px;
-				font-weight: lighter;
-				display: flex;
-				align-self: center;
-			}
+
 		}
 	}
 }
 
-@media (max-width:1000px){
+@media (max-width:1100px){
 	.euro-navbar{
 		display: none;
-
-		
-
-		
-		
 		
 		
 	}

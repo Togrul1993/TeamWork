@@ -26,7 +26,7 @@ body{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: $second-color;
+	background-color: rgba(35,192,233,0.5);
 	display: none;
 	
 
@@ -82,7 +82,7 @@ body{
 
 
 
-@media (max-width:1000px){
+@media (max-width:1100px){
 	
 	.euro-nav-mobil{
 		display: flex;

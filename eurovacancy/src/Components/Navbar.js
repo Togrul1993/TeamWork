@@ -38,7 +38,7 @@ const Navbar = () => {
 							</ul>
 						</div>
 
-						<Link to="/addcv" className="addcv"><i class="fa fa-plus" aria-hidden="true"></i>CV</Link>
+						<Link to="/addcv" className="addcv">CV</Link>
 
 
 					</div>
