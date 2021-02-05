@@ -11,6 +11,7 @@ import Vacancy from './Components/Vacancy';
 import VacancyDetail from './Components/VacancyDetail';
 import About from './Components/About';
 import AddCV from './Components/AddCv';
+import BlogDetails from './Components/BlogDetails';
 
 const App = () => {
 	return (
@@ -27,6 +28,7 @@ const App = () => {
 					<Route path="/contact" component={Contact} />
 					<Route path="/blog" component={Blog} />
 					<Route path="*" component={Eror404} />
+					<Route path="/post" component={BlogDetails}/>
 				</Switch>
 			</Router>
 
