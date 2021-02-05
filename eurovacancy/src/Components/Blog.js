@@ -86,7 +86,6 @@ export default class blog extends Component {
                             <h4 className="heading-3">Axtarış</h4>
                             <form id="form">
                                 <input type="search" id="query" name="q" placeholder="Axtar..." />
-                                {/* <button className="btn btn-dark">Search</button> */}
                                 <i className="fa fa-search"></i>
                             </form>
                         </div>
