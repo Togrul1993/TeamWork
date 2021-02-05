@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Image, Col, Container, Row, Card, Button } from 'react-bootstrap'
+import { Col, Container, Row, Card, Button } from 'react-bootstrap'
 import img from '../Image/blog.jpg'
-import { Link } from 'react-router-dom'
 
 
 const HomeBodyBlog = () => {

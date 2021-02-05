@@ -110,6 +110,11 @@ $font-color: #9b9b9b;
 			background-color: white;
 			color: black;
 			border-radius: 5px;
+			transition: all 0.6s linear;
+
+				&:hover{
+					background-color: #23c0e9;
+				}
 		}
 	}
 
@@ -185,6 +190,10 @@ $font-color: #9b9b9b;
 				margin-top: 15px;
 				width: 50%;
 				border: 2px solid black;
+
+			
+			
+			
 			}
 		}
 	}

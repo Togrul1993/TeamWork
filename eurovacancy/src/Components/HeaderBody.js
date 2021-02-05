@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 
 
 const HeaderBody = () => {
+
+	const onSubmit = (e) => {
+		e.preventDefault()
+	}
+
 	return (
 		<>
 			<div className="euro-header-body">
@@ -12,7 +17,7 @@ const HeaderBody = () => {
 				<p className="header-body-text">Find Jobs, Employment & Career Opportunities</p>
 
 
-				<form className="euro-header-body-form">
+				<form className="euro-header-body-form" onSubmit={onSubmit}>
 					<input className="euro-header-body-search" type="search" placeholder="Jobs Search" />
 
 					<select className="euro-header-body-location">
