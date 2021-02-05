@@ -18,18 +18,20 @@ export default class Contact extends Component {
   }
 
   render() {
+    const background = {
+      BackgroundColor: "#353b4a"
+    };
     return (
       <>
         <NavbarMobil />
         <Navbar />
         <Header />
 
-        <div className="container">
-          <span className="big-circle"></span>
+        <div className="container" style={background}>
 
           <div className="form">
             <div className="contact-info">
-              <h3 className="title">Bizimlə əlaqə</h3>
+              <h3 className="title">Bbizimlə əlaqə</h3>
               <p className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 dolorum adipisci recusandae praesentium dicta!
@@ -67,8 +69,7 @@ export default class Contact extends Component {
             </div>
 
             <div className="contact-form">
-              {/* <span className="circle one"></span>
-          <span className="circle two"></span> */}
+
 
               <form action="" autocomplete="off">
                 <h3 className="title">Əlaqə</h3>
@@ -92,8 +93,7 @@ export default class Contact extends Component {
                   <label for="" />
 
                 </div>
-                <input type="submit" value="Göndər" className="btn btn-primary" />
-              </form>
+                <button className="btn btn-dark">Göndər</button>              </form>
             </div>
           </div>
         </div>
