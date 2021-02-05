@@ -53,33 +53,35 @@ const Rules = () => {
 
 	return (
 		<>
-			<NavbarMobil />
+			<div className="bg-light">
+				<NavbarMobil />
 
-			<Navbar />
-			<Header />
-			<Container className="rules-container">
-				<h2>Ümumi qaydalar</h2>
-				<hr className="border-dark" />
-				{
-					rules.map(item => (
-						<div className="d-flex flex-row euro-rules-row">
-							<span>{item.number}. </span>
-							<div className="d-flex flex-column euro-rules">
-								<p>{item.text}</p>
-								<div className={item.rules_cname}>
-									<p><span>{item.rules_3_1_n}</span>{item.rules_3_1_r}</p>
-									<p><span>{item.rules_3_2_n}</span>{item.rules_3_2_r}</p>
-									<p><span>{item.rules_3_3_n}</span>{item.rules_3_3_r}</p>
-									<p><span>{item.rules_3_4_n}</span>{item.rules_3_4_r}</p>
-									<p><span>{item.rules_3_5_n}</span>{item.rules_3_5_r}</p>
+				<Navbar />
+				<Header />
+				<Container className="rules-container">
+					<h2>Ümumi qaydalar</h2>
+					<hr className="border-dark" />
+					{
+						rules.map(item => (
+							<div className="d-flex flex-row euro-rules-row">
+								<span>{item.number}. </span>
+								<div className="d-flex flex-column euro-rules">
+									<p>{item.text}</p>
+									<div className={item.rules_cname}>
+										<p><span>{item.rules_3_1_n}</span>{item.rules_3_1_r}</p>
+										<p><span>{item.rules_3_2_n}</span>{item.rules_3_2_r}</p>
+										<p><span>{item.rules_3_3_n}</span>{item.rules_3_3_r}</p>
+										<p><span>{item.rules_3_4_n}</span>{item.rules_3_4_r}</p>
+										<p><span>{item.rules_3_5_n}</span>{item.rules_3_5_r}</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					))
-				}
-				<h6>Saytda yerləşdirilən vakansiyalar və CV-lər üçün məsuliyyət elan yerləşdirən tərəf daşıyır.</h6>
-			</Container>
-			<Footer />
+						))
+					}
+					<h6>Saytda yerləşdirilən vakansiyalar və CV-lər üçün məsuliyyət elan yerləşdirən tərəf daşıyır.</h6>
+				</Container>
+				<Footer />
+			</div>
 		</>
 	)
 }

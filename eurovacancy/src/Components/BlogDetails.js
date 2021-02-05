@@ -4,7 +4,8 @@ import Header from './Header'
 import Footer from './Footer'
 import img from '../Image/blog.jpg'
 import NavbarMobil from './NavbarMobil'
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import { Link } from 'react-router-dom'
 
 
 export default class BlogDetails extends Component {
@@ -24,7 +25,7 @@ export default class BlogDetails extends Component {
                                     src={img}
                                     loading="lazy" sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 73vw"
                                     alt="" className="image" />
-                                    <h3 className="heading"><a href="www.google.com">Hey Seeker, It’s Time to job Now!</a></h3>
+                                    <h3 className="heading"><Link to="/blogdetails">Hey Seeker, It’s Time to job Now!</Link></h3>
                                     <div className="feed">
                                         <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
                                         enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
@@ -41,7 +42,7 @@ export default class BlogDetails extends Component {
                                 <h4 className="heading-3">Axtarış</h4>
                                 <form id="form">
                                     <input type="search" id="query" name="q" placeholder="Axtar..." />
-                                   
+
                                     <i className="fa fa-search"></i>
                                 </form>
                             </div>

@@ -12,13 +12,15 @@ import Counters from './Counters'
 const Home = () => {
 	return (
 		<>
-			<Navbar />
-			<NavbarMobil />
-			<Header />
-			<HomeBodyVacancy />
-			<Counters />
-			<HomeBodyBlog />
-			<Footer />
+			<div className="bg-light">
+				<Navbar />
+				<NavbarMobil />
+				<Header />
+				<HomeBodyVacancy />
+				<Counters />
+				<HomeBodyBlog />
+				<Footer />
+			</div>
 		</>
 	)
 }
