@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;0,900;1,200&display=swap');
+
 $txt-color: #fff;
 $a-before-after:#337ab7;
 $navbar-btn-color:#f36969;
@@ -8,6 +10,7 @@ body{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 	
 }
 	
@@ -27,8 +30,8 @@ body{
 			flex-wrap: nowrap;
 			justify-content: flex-end;
 			padding-top:10px ;
-			
-			.navbar-menu-items{
+
+			.navbar-menu-item{
 				position: relative;
 				display: flex;
 				text-align: center;
@@ -36,7 +39,7 @@ body{
 				justify-content: center;
 			
 				a.activelink{
-					background-color: rgba(255,255,255,1);
+					background-color: rgba(255,255,255,0.5);
 				}
 			
 				.menulink{

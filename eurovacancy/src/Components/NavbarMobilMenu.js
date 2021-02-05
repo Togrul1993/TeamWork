@@ -13,37 +13,37 @@ const NavbarMobilMenu = ({ bars, barsClick }) => {
 				to: "/"
 			},
 			{
-				exact: false,
+
 				title: "Haqqimizda",
 				to: "/about"
 			},
 			{
-				exact: false,
+
 				title: "Vakansiyalar",
 				to: "/vacancies"
 			},
 			{
-				exact: false,
+
 				title: "Blog",
 				to: "/blog"
 			},
 			{
-				exact: false,
+
 				title: "Reklam",
 				to: "/advertising"
 			},
 			{
-				exact: false,
+
 				title: "Qaydalar",
 				to: "/rules"
 			},
 			{
-				exact: false,
+
 				title: "Elaqe",
 				to: "/contact"
 			},
 			{
-				exact: false,
+
 				title: "CV Yerlesdir",
 				to: "/addcv"
 			}

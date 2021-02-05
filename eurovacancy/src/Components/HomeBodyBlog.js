@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Image, Col, Container, Row } from 'react-bootstrap'
+import { Image, Col, Container, Row, Card, Button } from 'react-bootstrap'
 import img from '../Image/blog.jpg'
 import { Link } from 'react-router-dom'
 
@@ -62,23 +62,29 @@ const HomeBodyBlog = () => {
 
 					{
 						blogs.map((blog, id) => (
-							<Col lg={3} key={id} className="d-flex flex-column mb-3 m-1 p-0 border border-dark home-bodyblog-col">
-								<Image src={blog.img} />
-								<h3 className="p-1">{overviewTrim(blog.title, 13)}</h3>
-								<p className="p-1">{overviewTrim(blog.txt, 80)}</p>
-								<hr className="border-dark p-0" />
-								<div className="d-flex flex-row flex-nowrap justify-content-between mt-1 mb-1 p-1 home-bodyblog-shares">
 
-									<Link to="/blog" className="reade-more  text-decoration-none home-bodyblog-btn">Etrafli</Link>
-
-									<div className="d-flex flex-row flex-nowrap justify-content-between w-25 p-1 home-bodyblog-share">
-										<Link to="/" className="fa fa-facebook text-decoration-none" aria-hidden="true"></Link>
-										<Link to="/" className="fa fa-whatsapp  text-decoration-none " aria-hidden="true"></Link>
-									</div>
-								</div>
+							<Col lg={3} md={6} xs={12} key={id} className="m-3">
+								<Card style={{ width: '18rem' }}>
+									<Card.Img variant="top" src={blog.img} />
+									<Card.Body>
+										<Card.Title>{overviewTrim(blog.title, 13)}</Card.Title>
+										<Card.Text>
+											{overviewTrim(blog.txt, 80)}
+										</Card.Text>
+										<Card.Footer className="d-flex justify-content-between">
+											<Button href="/blogdetals" variant="primary">Etrafli</Button>
+											<Button variant="primary" className="fa fa-facebook"></Button>
+											<Button variant="primary" className="fa fa-whatsapp"></Button>
+										</Card.Footer>
+									</Card.Body>
+								</Card>
 							</Col>
 						))
 					}
+
+					<Col lg={12} className="d-flex justify-content-center mt-3 mb-3">
+						<Button href="/blog" variant="primary">Daha Cox</Button>
+					</Col>
 				</Row>
 
 			</Container>
