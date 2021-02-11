@@ -1,113 +1,94 @@
-import React, { Component } from 'react'
-import '../Asests/blog.css'
-import Header from './Header'
-import Footer from './Footer'
-import img from '../Image/blog.jpg'
-import NavbarMobil from './NavbarMobil'
-import Navbar from './Navbar'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Col, Container, Row, Card, Button } from 'react-bootstrap';
+import BlogData from '../app/bloh.json';
+import '../Asests/blog.css';
+import Header from './Header';
+import Footer from './Footer';
+import NavbarMobil from './NavbarMobil';
+import Navbar from './Navbar';
+import ReactPagenate from 'react-paginate';
 
 
 
+const Blog = () => {
 
-export default class blog extends Component {
-    render() {
+    const data = (BlogData.blogitems.splice(0, 50));
+
+
+    const overviewTrim = (string, maxstring) => {
+        if (!string) return null;
+        if (string.length <= maxstring) return string;
+        return `${string.substring(0, maxstring)} ...`;
+    };
+
+
+    const [pagenumber, setPageNumber] = useState(0);
+    const pageitems = 6;
+    const pageVisited = pagenumber * pageitems;
+    const blogdata = data.slice(pageVisited, pageVisited + pageitems).sort((a, b) => { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 })
+
+    const displayPages = blogdata.map((blogs, id) => {
         return (
-            <>
-                <NavbarMobil />
-                <Navbar />
-                <Header />
-                <div className="columns w-row">
-                    <div className="w-col w-col-9">
-                        <h1 className="heading-2">Blog Kateqoriyalar<br /></h1>
-                        <section id="feature-section" className="vacan feature-section">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div><img
-                                    src={img}
-                                    loading="lazy" sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 73vw"
-                                    alt="" className="image" />
-                                    <h3 className="heading"><Link to="/blogdetails">Hey Seeker, It’s Time to job Now!</Link></h3>
-                                    <div className="feed">
-                                        <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
-                                        nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
-                                    </div>
-                                </div>
-                                <div><img
-                                    src={img}
-                                    loading="lazy" sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 73vw"
-                                    alt="" className="image" />
-                                    <h3 className="heading"><Link to="/blogdetails">Hey Seeker, It’s Time to job Now!</Link></h3>
-                                    <div className="feed">
-                                        <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
-                                        nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
-                                    </div>
-                                </div>
-                                <div><img
-                                    src={img}
-                                    loading="lazy" sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 73vw"
-                                    alt="" className="image" />
-                                    <h3 className="heading"><Link to="/blogdetails">Hey Seeker, It’s Time to job Now!</Link></h3>
-                                    <div className="feed">
-                                        <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
-                                        nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
-                                    </div>
-                                </div>
-                                <div><img
-                                    src={img}
-                                    loading="lazy" sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 73vw"
-                                    alt="" className="image" />
-                                    <h3 className="heading"><Link to="/blogdetails">Hey Seeker, It’s Time to job Now!</Link></h3>
-                                    <div className="feed">
-                                        <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
-                                        nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-                                imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                        <span>Share : </span><i className="fab fa-facebook-square icon"></i><i className="fab fa-instagram icon"></i>
-                                    </div>
-                                </div>
-                            </div>
 
-                        </section>
-                    </div>
-                    <div className="w-col w-col-3">
-                        <div></div>
-                        <div></div>
-                        <div>
+            <Col lg={4} md={6} xs={12} key={id} className="mb-3">
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={blogs.img} />
+                    <Card.Body>
+                        <Card.Title>{overviewTrim(blogs.title, 14)}</Card.Title>
+                        <Card.Text>
+                            {overviewTrim(blogs.txt, 80)}
+                        </Card.Text>
+                        <Card.Text className="text-right">12 saat evvel</Card.Text>
+                        <Card.Footer className="d-flex justify-content-between">
+                            <Button href="/blogdetals" variant="primary">Etrafli</Button>
+                            <Button variant="primary" className="fa fa-facebook"></Button>
+                            <Button variant="primary" className="fa fa-whatsapp"></Button>
+                        </Card.Footer>
+                    </Card.Body>
+                </Card>
+            </Col>
 
-
-                            <h4 className="heading-3">Axtarış</h4>
-                            <form id="form">
-                                <input type="search" id="query" name="q" placeholder="Axtar..." />
-                                <i className="fa fa-search"></i>
-                            </form>
-                        </div>
-
-                        <div className="left-category">
-                            <h4 className="heading-4">Kateqoriya üzrə işlər<br /></h4>
-                        </div>
-                        <ul className="list">
-                            <li className="list-item">Graphic Designer (214)</li>
-                            <li className="list-item-2">Engineering Jobs (514)</li>
-                            <li className="list-item-3">Mainframe Jobs (554)</li>
-                            <li className="list-item-3">Mainframe Jobs (554)</li>
-                            <li className="list-item-3">Mainframe Jobs (554)</li>
-                            <li className="list-item-3">Mainframe Jobs (554)</li>
-                            <li className="list-item-3">Mainframe Jobs (554)</li>
-                        </ul>
-                    </div>
-                </div>
-                <Footer />
-            </>
 
         )
-    }
-}
+    })
+
+
+    const pageCount = Math.ceil(data.length / pageitems);
+
+
+    return (
+        <>
+            <NavbarMobil />
+            <Navbar />
+            <Header />
+
+
+            <Container className="home-bodyblog-container">
+                <h3>Blog</h3>
+                <hr className="border-dark" />
+                <Row id="blog" className="d-flex justify-content-lg-around justify-content-md-center justify-content-sm-center justify-content-xl-center home-bodyblog-row ">
+
+
+                    {displayPages}
+
+                    <ReactPagenate
+                        previousLabel={"Previous"}
+                        nextLabel={"Next"}
+                        pageCount={pageCount}
+                    />
+
+                    <Col lg={12} className="d-flex justify-content-center mt-3 mb-3">
+                        <Button href="/blog" variant="primary">Daha Cox</Button>
+                    </Col>
+                </Row>
+            </Container>
+
+
+
+
+            <Footer />
+        </>
+
+    );
+};
+export default Blog;

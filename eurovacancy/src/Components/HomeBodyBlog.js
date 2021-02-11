@@ -1,54 +1,22 @@
 import React, { useState } from 'react'
 import { Col, Container, Row, Card, Button } from 'react-bootstrap'
-import img from '../Image/blog.jpg'
+import BlogData from '../app/bloh.json';
 
 
 const HomeBodyBlog = () => {
 
-	const [blogitems] = useState([
-		{
-			id: 1,
-			img: img,
-			title: "Lorem Ipsum 1",
-			txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla"
-		},
-		{
-			id: 2,
-			img: img,
-			title: "Lorem Ipsum 2",
-			txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla"
-		},
-		{
-			id: 3,
-			img: img,
-			title: "Lorem Ipsum 3",
-			txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla"
-		},
-		{
-			id: 4,
-			img: img,
-			title: "Lorem Ipsum 4",
-			txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros"
-		},
-		{
-			id: 5,
-			img: img,
-			title: "Lorem Ipsum 5",
-			txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros"
-		}
+	const data = (BlogData.blogitems);
 
 
-	])
-
-	const blogs = blogitems.sort((a, b) => { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 }).splice(0, 3)
+	const blogs = data.sort((a, b) => { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 }).splice(0, 3);
 
 
 
 	const overviewTrim = (string, maxstring) => {
 		if (!string) return null;
 		if (string.length <= maxstring) return string;
-		return `${string.substring(0, maxstring)} ...`
-	}
+		return `${string.substring(0, maxstring)} ...`;
+	};
 
 	return (
 		<>
@@ -57,12 +25,12 @@ const HomeBodyBlog = () => {
 				<h3>Blog</h3>
 				<hr className="border-dark" />
 
-				<Row id="blog" className="d-flex justify-content-center home-bodyblog-row">
+				<Row id="blog" className="d-flex justify-content-lg-around justify-content-md-center justify-content-sm-center justify-content-xl-center home-bodyblog-row ">
 
 					{
 						blogs.map((blog, id) => (
 
-							<Col lg={3} md={6} xs={12} key={id} className="m-3">
+							<Col lg={3} md={6} xs={12} key={id} className=" mb-3">
 								<Card style={{ width: '18rem' }}>
 									<Card.Img variant="top" src={blog.img} />
 									<Card.Body>
