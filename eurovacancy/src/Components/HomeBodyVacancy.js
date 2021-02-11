@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom'
 import { newcontext } from '../context';
 
 
@@ -47,7 +46,7 @@ const HomeBodyVacancy = () => {
 											{jobs.type}
 										</div>
 										<div className="view-more">
-											<Link to="/vacancies/vacancy-detail" >View More</Link>
+											<a href="/vacancy-detail" >View More</a>
 										</div>
 									</div>
 								</div>
@@ -57,7 +56,7 @@ const HomeBodyVacancy = () => {
 					}
 				</div>
 				<div className="row d-flex justify-content-center">
-					<Link className="btn btn-primary" to="/vacancy">Daha Cox</Link>
+					<a className="btn btn-primary" href="/vacancies">Daha Cox</a>
 				</div>
 			</div>
 		</>
