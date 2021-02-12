@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import Navbar from './Navbar'
-import NavbarMobil from './NavbarMobil'
+import React, { Component } from 'react';
+import Footer from './Footer';
+import Header from './Header';
+
+import Navbar from './Navbar';
+import NavbarMobil from './NavbarMobil';
 
 export default class AddCv extends Component {
     render() {
@@ -14,7 +15,7 @@ export default class AddCv extends Component {
                 <div className="add-cv">
                     <div className="container">
                         <div className="form-header">
-                            <h3>Job Details</h3>
+                            <h3>Job Details </h3>
                         </div>
                         <div className="row">
                             <div className="col-lg-6 col-sm-12 my-3">
