@@ -16,6 +16,7 @@ import './Asests/Rules.scss'
 import './Asests/HeaderBody.scss';
 import './Asests/Counters.scss';
 import './Asests/HomeBodyBlog.scss'
+import './Asests/Blog.scss'
 import './Asests/vacancy.css';
 import './Asests/vacancy-detail.css';
 import './Asests/about.css';
